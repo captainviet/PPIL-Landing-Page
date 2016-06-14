@@ -1,3 +1,8 @@
 body {
 	/* TODO: ... */
+	background-color: grey;
+}
+
+.container {
+	background-color: white;
 }

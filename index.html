@@ -4,13 +4,44 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<title>PayPal Innovation Lab</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<link rel="stylesheet" href="app.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+			integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="app.js"></script>
+<!-- 		<script>
+			function initMap() {
+				var eventPos = {lat: 1.2936604, lng: 103.857193};
+
+				  // Create a map object and specify the DOM element for display.
+				var map = new google.maps.Map(document.getElementById('gmaps'), {
+					center: eventPos,
+				    scrollwheel: false,
+				    zoom: 15
+				});
+
+				  // Create a marker and set its position.
+				var marker = new google.maps.Marker({
+				    map: map,
+				    position: eventPos,
+				    title: 'Hello World!'
+				});
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKJyNP-diLPyMwjJkB-vOa0CZBHYaf1cE&callback=initMap" type="text/javascript"></script>
+ -->
+
 	</head>
 	<body>
 
@@ -41,19 +72,415 @@
 		</nav>
 
 		<div class="container">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-7">Event Location</div>
-					<div class="col-sm-1">HOURS</div>
-					<div class="col-sm-1">MIN</div>
-					<div class="col-sm-1">SEC</div>
-					<div class="col-sm-2"></div>
+
+			<div class="panel panel-default">
+
+				<div class="panel-heading" style="padding: 15px;">
+
+					<div class="row">
+
+						<div class="col-md-7">
+							<h3 class="panel-title">
+								About - Heading
+							</h3>
+						</div>
+
+						<div class="col-md-1">
+							Hours
+						</div>
+
+						<div class="col-md-1">
+							Minutes
+						</div>
+
+						<div class="col-md-1">
+							Seconds
+						</div>
+
+						<div class="col-md-2" style="text-align: center">
+
+							<button type="button" class="btn btn-primary">
+								<span><i class="fa fa-plus-circle"></i> Register</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel-body">
+					About - Content
 				</div>
 			</div>
 		</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script src="app.js"></script>
+		<div class="container">
+
+			<div class="panel panel-default">
+
+				<ul class="nav nav-tabs nav-justified">
+
+					<li class="active" data-toggle="tab"><a href="#tab-1">Tab 1</a></li>
+					<li><a href="#tab-2" data-toggle="tab">Tab 2</a></li>
+					<li><a href="#tab-3" data-toggle="tab">Tab 3</a></li>
+					<li><a href="#tab-4" data-toggle="tab">Tab 4</a></li>
+				</ul>
+				
+				<div class="panel-body">
+
+					<div class="tab-content" id="schedule-tab-content">
+
+						<div class="tab-pane fade in active" id="tab-1">
+							Tab 1 Content
+						</div>
+
+						<div class="tab-pane fade" id="tab-2">
+							Tab 2 Content
+						</div>
+
+						<div class="tab-pane fade" id="tab-3">
+							Tab 3 Content
+						</div>
+
+						<div class="tab-pane fade" id="tab-4">
+							Tab 4 Content
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+					<h3 class="panel-title">Speaker - Heading</h3>
+					Speaker - Info
+				</div>
+
+				<div class="panel-body">
+					Speaker - Body
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class = "row">
+
+			    <div class = "col-md-3">
+					<div class="thumbnail">
+						<img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png">
+						<h3>Speaker 1</h3>
+						<p>Speaker 1 Detail</p>
+					</div>
+
+			    </div>
+			   
+			    <div class = "col-md-3">
+			    	<div class="thumbnail">
+			    		<img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png">
+						<h3>Speaker 2</h3>
+						<p>Speaker 2 Detail</p>
+			    	</div>
+			   	</div>
+			   
+			   	<div class = "col-md-3">
+			   		<div class="thumbnail">
+			   			<img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png">
+			   			<h3>Speaker 3</h3>
+						<p>Speaker 3 Detail</p>
+			   		</div>
+			   	</div>
+			   
+			   	<div class = "col-md-3">
+			   		<div class="thumbnail">
+			   			<img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png">
+			   			<h3>Speaker 4</h3>
+						<p>Speaker 4 Detail</p>
+			   		</div>
+			   	</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+					<h3 class="panel-title">FAQ</h3>
+					Frequently asked question
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-6">
+						<div class="panel-group" id="accordion-left">
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#question-1" data-toggle="collapse" data-parent="#accordion-left">Quesion 1</a>
+									</h4>
+								</div>
+
+								<div class="panel-collapse collapse in" id="question-1">
+									<div class="panel-body">
+										<p>
+											Answer 1
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#question-2" data-toggle="collapse" data-parent="#accordion-left">Question 2</a>
+									</h4>
+								</div>
+
+								<div class="panel-collapse collapse" id="question-2">
+									<div class="panel-body">
+										<p>
+											Answer 2
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#question-3" data-toggle="collapse" data-parent="#accordion-left">Question 3</a>
+									</h4>
+								</div>
+
+								<div class="panel-collapse collapse" id="question-3">
+									<div class="panel-body">
+										<p>
+											Answer 3
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#question-4" data-toggle="collapse" data-parent="#accordion-left">Question 4</a>
+									</h4>
+								</div>
+
+								<div class="panel-collapse collapse" id="question-4">
+									<div class="panel-body">
+										<p>
+											Answer 4
+										</p>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="panel-group" id="accordion-right">
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#question-5" data-toggle="collapse" data-parent="#accordion-right">Quesion 5</a>
+									</h4>
+								</div>
+
+								<div class="panel-collapse collapse" id="question-5">
+									<div class="panel-body">
+										<p>
+											Answer 5
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#question-6" data-toggle="collapse" data-parent="#accordion-right">Question 6</a>
+									</h4>
+								</div>
+
+								<div class="panel-collapse collapse" id="question-6">
+									<div class="panel-body">
+										<p>
+											Answer 6
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#question-7" data-toggle="collapse" data-parent="#accordion-right">Question 7</a>
+									</h4>
+								</div>
+
+								<div class="panel-collapse collapse" id="question-7">
+									<div class="panel-body">
+										<p>
+											Answer 7
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#question-8" data-toggle="collapse" data-parent="#accordion-right">Question 8</a>
+									</h4>
+								</div>
+
+								<div class="panel-collapse collapse" id="question-8">
+									<div class="panel-body">
+										<p>
+											Answer 8
+										</p>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Venue
+					</h3>
+				</div>
+
+				<iframe width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKJyNP-diLPyMwjJkB-vOa0CZBHYaf1cE&q=Suntec+Convention+%26+Exhibition+Centre"></iframe>
+<!-- 				<div id="gmaps"></div>
+ -->
+ 				<div class="row" style="height: auto">
+
+ 					<div class="col-md-4">
+
+ 						<div class="box">
+
+	 						<h4 class="panel-title">
+	 							Event Location
+	 						</h4>
+
+	 						<div class="row">
+
+	 							<div class="col-md-2">
+	 								<i class="fa fa-map-marker"></i>
+	 							</div>
+
+	 							<div class="col-md-10">
+	 								Suntec Convention & Exhibition Center, 1 Raffles Boulevard, Suntec City, 039593
+	 							</div>
+	 						</div>
+
+	 						<div class="row">
+
+	 							<div class="col-md-2">
+	 								<i class="fa fa-envelope"></i>
+	 							</div>
+
+	 							<div class="col-md-10">
+	 								Email Us:
+	 								<br>
+	 								<a href="#">PayPalInnovationLab@paypal.com</a>
+	 							</div>
+	 						</div>
+	 					</div>
+ 					</div>
+
+ 					<div class="col-md-3">
+
+ 						<form role="form">
+
+	 						<div class="form-group">
+
+	 							<label for="depart">
+	 								Departing From:
+	 							</label>
+	 							<input type="text" class="form-control" id="email">
+	 						</div>
+
+	 						<div class="form-group">
+
+	 							<label for="via">
+	 								Via (Optional):
+	 							</label>
+	 							<input type="text" class="form-control" id="via">
+	 						</div>
+
+	 						<div class="form-group">
+
+	 							<label for="mode">
+	 								Travel Mode:
+	 							</label>
+
+	 							<div class="row">
+
+	 								<div class="col-md-6">
+
+		 								<div class="radio">
+			 								<label>
+			 									<input type="radio" name="radio" id="driving">Driving
+			 								</label>
+			 							</div>
+
+			 							<div class="radio">
+			 								<label>
+			 									<input type="radio" name="radio" id="public-transport">Public Transport
+			 								</label>
+			 							</div>
+		 							</div>
+
+		 							<div class="col-md-6">
+										
+										<div class="radio">
+			 								<label>
+			 									<input type="radio" name="radio" id="bicycling">Bicycling
+			 								</label>
+		 								</div>
+
+			 							<div class="radio">
+			 								<label>
+			 									<input type="radio" name="radio" id="walking">Walking
+			 								</label>
+			 							</div>
+			 						</div>
+			 					</div>
+
+			 					<button type="submit" class="btn btn-primary" style="width: 100%" id="submit">
+			 						Get Directions
+			 					</button>
+	 						</div>
+	 					</form>
+
+
+ 					</div>
+
+ 					<div class="col-md-5">
+ 						<h4 class="panel-title">
+ 							Directions
+ 						</h4>
+ 					</div>
+ 				</div>
+			</div>			
+		</div>
+
+
+		
 	</body>
 </html>

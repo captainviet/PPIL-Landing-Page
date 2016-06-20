@@ -1,0 +1,32 @@
+body {
+	/* TODO: ... */
+	background-color: grey;
+}
+
+.container {
+	background-color: white;
+}
+
+.b-1 {
+	outline: thick dotted red;
+}
+
+.b-2 {
+	outline: thick dotted green;
+}
+
+.row {
+	min-height: 20%;
+}
+
+.panel-group {
+	 padding: 5%;
+}
+
+.panel-body {
+	  border: 1px solid transparent;
+}
+
+#map {
+	height: 100%;
+}

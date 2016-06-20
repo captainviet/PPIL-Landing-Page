@@ -1,0 +1,12 @@
+### Clarifications:
+	- 
+
+### Resources:
+	- PPIL's background picture
+	- FXIL's rough design
+
+### Study:
+	- horizontal scrolling of thumbnails (for speakers)
+	- GMaps API for JavaScript (handling navigation queries
+	- dual tab for Morning - Afternoon sessions
+	- footer for PPIL

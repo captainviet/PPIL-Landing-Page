@@ -10,16 +10,18 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
 			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" href="app.css">
+		<link rel="stylesheet" href="res/css/app.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
 			integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script src="app.js"></script>
+			<script src="res/js/jquery.easing.min.js"></script>
+		<script src="res/js/app.js"></script>
 <!-- 		<script>
 			function initMap() {
 				var eventPos = {lat: 1.2936604, lng: 103.857193};
@@ -43,46 +45,50 @@
  -->
 
 	</head>
-	<body>
+	<body data-spy="scroll" data-target= ".navbar-fixed-top">
 
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-ppil" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">PayPal Innovation Lab</a>
+					<a class="navbar-brand" href="https://www.paypal.com"><img src="http://www.merchantmaverick.com/wp-content/uploads/2013/03/Paypal-Logo-2015.png" style="height: 150%;" alt="PayPal Pte Ltd"></a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse" id="navbar-ppil">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Schedule</a></li>
-						<li><a href="#">Speakers</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Venue</a></li>
-						<li><a href="#">Subscribe</a></li>
+						<li><a class="page-scroll" href="#schedule-heading">Schedule</a></li>
+						<li><a class="page-scroll" href="#speaker-heading">Speakers</a></li>
+<!-- 						<li><a href="#">FAQ</a></li> -->
+						<li><a class="page-scroll" href="#venue-heading">Venue</a></li>
+<!-- 						<li><a href="#">Subscribe</a></li> -->
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
 		</nav>
 
-		<div class="container">
+		<div class="container" style="position: relative; top: 10%" id="about-heading">
+
+			<hr class="blue-top">
 
 			<div class="panel panel-default">
 
-				<div class="panel-heading" style="padding: 15px;">
+				<div class="panel-heading">
 
-					<div class="row">
+					<h3 class="panel-title-cust">
+						About the Event
+					</h3>
+
+					<!-- <div class="row">
 
 						<div class="col-md-7">
-							<h3 class="panel-title">
-								About - Heading
-							</h3>
+							
 						</div>
 
 						<div class="col-md-1">
@@ -103,16 +109,115 @@
 								<span><i class="fa fa-plus-circle"></i> Register</span>
 							</button>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
 				<div class="panel-body">
-					About - Content
+					<p>
+						PayPal is ushering in the Future of Money with the launch of its brand new PayPal Innovation Lab in Singapore. As a leader in digital payments, PayPal is bringing together its expertise and resources by fostering innovation and building capability that helps take Singapore to the next frontier in digital commerce and payments. This is a first-of-its-kind collaboration between PayPal and the Singapore FinTech ecosystem including government agencies, industry associations, consumers and universities. Through the PayPal Innovation Lab, PayPal endeavors to transform the community it is part of – by enabling researchers, students, start-ups and small businesses to embrace FinTech innovation in topics close to their hearts, and contribute to shaping the Future of Money. This year to kick-start this initiative, PayPal is calling for SMEs in the F&B industry to step forward share their challenges relating to payments.
+					</p>
+
+					<p style="font-weight: bold;">
+						Come join us for an exciting day and a sneak peek into the Future of Money!
+					</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="container">
+		<div class="container" id="schedule-heading">
+
+			<hr class="blue-top">
+			
+			<div class="panel panel-default">
+				
+				<div class="panel-heading">
+					
+					<h3 class="panel-title-cust">
+						Event Schedule
+					</h3>
+				</div>
+
+				<div class="panel-body">
+
+					<ul class="nav nav-tabs">
+
+						<li class="active"><a href="#am" data-toggle="tab">AM</a></li>
+						<li><a href="#pm" data-toggle="tab">PM</a></li>
+					</ul>
+
+					<div class="tab-content" id="schedule-tab-content" style="padding: 2%">
+						
+						<div class="tab-pane fade in active" id="am">
+							
+							<table class="table table-striped table-bordered">
+						
+								<tbody>
+									
+									<tr>
+										<td class="row">
+											<div class="col-md-2">
+												9:30
+											</div>
+											<div class="col-md-10">
+												Registration
+											</div>
+										</td>
+
+										<td class="row">
+											<div class="col-md-2">
+												10:30
+											</div>
+											<div class="col-md-10">
+												VIP & Media Tour of Innovation Showcase
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="row">
+											<div class="col-md-2">
+												10:00
+											</div>
+											<div class="col-md-4">
+												Welcome Address
+											</div>
+											<div class="col-md-6">
+												Rohan Mahadevan
+												<br>
+												Senior Vice President, APAC, PayPal
+											</div>
+										</td>
+
+										<td class="row">
+											<div class="col-md-2">
+												11:30
+											</div>
+											<div class="col-md-10">
+												Innovation Showcase
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="tab-pane fade" id="pm">
+							
+							<div class="wrapper">
+								<p>
+									Afternoon session directed to FinTech XChange!
+								</p>
+								<a href="#" class= "btn btn-primary" role="button" style="color: white; text-decoration: normal">Visit FinTect XChange Landing Page</a>
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+		</div>
+
+<!-- 		<div class="container">
 
 			<div class="panel panel-default">
 
@@ -147,67 +252,108 @@
 				</div>
 			</div>
 		</div>
+ -->
+		<div class="container" id="speaker-heading">
 
-		<div class="container">
+			<hr class="blue-top">
 
 			<div class="panel panel-default">
 
 				<div class="panel-heading">
-					<h3 class="panel-title">Speaker - Heading</h3>
-					Speaker - Info
+					<h3 class="panel-title-cust">Speakers</h3>
 				</div>
 
-				<div class="panel-body">
-					Speaker - Body
+				<div class="container-fluid">
+
+					<div class="horizontal">
+
+					    <div class="table">
+
+					        <article>
+					        	<div class="thumbnail">
+						   			<a href="#speaker-1" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
+						   			<p>Speaker 1</p>
+									<p>Speaker 1 Detail</p>
+						   		</div>
+					        </article>
+
+					        <article>
+					        	<div class="thumbnail">
+						   			<a href="#speaker-2" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
+						   			<p>Speaker 2</p>
+									<p>Speaker 2 Detail</p>
+						   		</div>
+					        </article>
+
+					        <article>
+					        	<div class="thumbnail">
+						   			<a href="#speaker-3" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
+						   			<p>Speaker 3</p>
+									<p>Speaker 3 Detail</p>
+						   		</div>
+					        </article>
+
+					        <article>
+					        	<div class="thumbnail">
+						   			<a href="#speaker-4" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
+						   			<p>Speaker 4</p>
+									<p>Speaker 4 Detail</p>
+						   		</div>
+					        </article>
+
+					        <article>
+					        	<div class="thumbnail">
+					        		<a href="#speaker-5" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
+						   			<p>Speaker 5</p>
+									<p>Speaker 5 Detail</p>
+						   		</div>
+					        </article>
+					    </div>
+					</div>
 				</div>
-			</div>
-		</div>
 
-		<div class="container">
-
-			<div class = "row">
-
-			    <div class = "col-md-3">
-					<div class="thumbnail">
-						<img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png">
-						<h3>Speaker 1</h3>
-						<p>Speaker 1 Detail</p>
+				<div class="tab-content">
+					
+					<div class="tab-pane fade" id="speaker-1">
+						<div class="jumbotron">
+							<p>Some Info</p>
+						</div>
 					</div>
 
-			    </div>
-			   
-			    <div class = "col-md-3">
-			    	<div class="thumbnail">
-			    		<img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png">
-						<h3>Speaker 2</h3>
-						<p>Speaker 2 Detail</p>
-			    	</div>
-			   	</div>
-			   
-			   	<div class = "col-md-3">
-			   		<div class="thumbnail">
-			   			<img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png">
-			   			<h3>Speaker 3</h3>
-						<p>Speaker 3 Detail</p>
-			   		</div>
-			   	</div>
-			   
-			   	<div class = "col-md-3">
-			   		<div class="thumbnail">
-			   			<img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png">
-			   			<h3>Speaker 4</h3>
-						<p>Speaker 4 Detail</p>
-			   		</div>
-			   	</div>
+					<div class="tab-pane fade" id="speaker-2">
+						<div class="jumbotron">
+							<p>Some Info</p>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="speaker-3">
+						<div class="jumbotron">
+							<p>Some Info</p>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="speaker-4">
+						<div class="jumbotron">
+							<p>Some Info</p>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="speaker-5">
+						<div class="jumbotron">
+							<p>Some Info</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="container">
+
+		<!-- <div class="container">
 
 			<div class="panel panel-default">
 
 				<div class="panel-heading">
-					<h3 class="panel-title">FAQ</h3>
+					<h3 class="panel-title-cust">FAQ</h3>
 					Frequently asked question
 				</div>
 
@@ -218,7 +364,7 @@
 
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title">
+									<h4 class="panel-title-cust">
 										<a href="#question-1" data-toggle="collapse" data-parent="#accordion-left">Quesion 1</a>
 									</h4>
 								</div>
@@ -234,7 +380,7 @@
 
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title">
+									<h4 class="panel-title-cust">
 										<a href="#question-2" data-toggle="collapse" data-parent="#accordion-left">Question 2</a>
 									</h4>
 								</div>
@@ -250,7 +396,7 @@
 
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title">
+									<h4 class="panel-title-cust">
 										<a href="#question-3" data-toggle="collapse" data-parent="#accordion-left">Question 3</a>
 									</h4>
 								</div>
@@ -266,7 +412,7 @@
 							
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title">
+									<h4 class="panel-title-cust">
 										<a href="#question-4" data-toggle="collapse" data-parent="#accordion-left">Question 4</a>
 									</h4>
 								</div>
@@ -287,7 +433,7 @@
 
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title">
+									<h4 class="panel-title-cust">
 										<a href="#question-5" data-toggle="collapse" data-parent="#accordion-right">Quesion 5</a>
 									</h4>
 								</div>
@@ -303,7 +449,7 @@
 
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title">
+									<h4 class="panel-title-cust">
 										<a href="#question-6" data-toggle="collapse" data-parent="#accordion-right">Question 6</a>
 									</h4>
 								</div>
@@ -319,7 +465,7 @@
 
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title">
+									<h4 class="panel-title-cust">
 										<a href="#question-7" data-toggle="collapse" data-parent="#accordion-right">Question 7</a>
 									</h4>
 								</div>
@@ -335,7 +481,7 @@
 							
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title">
+									<h4 class="panel-title-cust">
 										<a href="#question-8" data-toggle="collapse" data-parent="#accordion-right">Question 8</a>
 									</h4>
 								</div>
@@ -352,135 +498,203 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="container">
+		<div class="container" id="venue-heading">
+
+			<hr class="blue-top">
 
 			<div class="panel panel-default">
 
 				<div class="panel-heading">
-					<h3 class="panel-title">
+					<h3 class="panel-title-cust">
 						Venue
 					</h3>
 				</div>
 
-				<iframe width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKJyNP-diLPyMwjJkB-vOa0CZBHYaf1cE&q=Suntec+Convention+%26+Exhibition+Centre"></iframe>
+				<div class="panel-body">
+
+					<iframe height="450" frameborder="0" style="border: 0" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKJyNP-diLPyMwjJkB-vOa0CZBHYaf1cE&q=Suntec+Convention+%26+Exhibition+Centre"></iframe>
 <!-- 				<div id="gmaps"></div>
  -->
- 				<div class="row" style="height: auto">
+	 				<div class="row">
 
- 					<div class="col-md-4">
+	 					<div class="col-md-4">
 
- 						<div class="box">
+	 						<div class="box">
 
-	 						<h4 class="panel-title">
-	 							Event Location
-	 						</h4>
+		 						<h4 class="panel-title-cust">
+		 							Event Location
+		 						</h4>
 
-	 						<div class="row">
+		 						<div class="row">
 
-	 							<div class="col-md-2">
-	 								<i class="fa fa-map-marker"></i>
-	 							</div>
-
-	 							<div class="col-md-10">
-	 								Suntec Convention & Exhibition Center, 1 Raffles Boulevard, Suntec City, 039593
-	 							</div>
-	 						</div>
-
-	 						<div class="row">
-
-	 							<div class="col-md-2">
-	 								<i class="fa fa-envelope"></i>
-	 							</div>
-
-	 							<div class="col-md-10">
-	 								Email Us:
-	 								<br>
-	 								<a href="#">PayPalInnovationLab@paypal.com</a>
-	 							</div>
-	 						</div>
-	 					</div>
- 					</div>
-
- 					<div class="col-md-3">
-
- 						<form role="form">
-
-	 						<div class="form-group">
-
-	 							<label for="depart">
-	 								Departing From:
-	 							</label>
-	 							<input type="text" class="form-control" id="email">
-	 						</div>
-
-	 						<div class="form-group">
-
-	 							<label for="via">
-	 								Via (Optional):
-	 							</label>
-	 							<input type="text" class="form-control" id="via">
-	 						</div>
-
-	 						<div class="form-group">
-
-	 							<label for="mode">
-	 								Travel Mode:
-	 							</label>
-
-	 							<div class="row">
-
-	 								<div class="col-md-6">
-
-		 								<div class="radio">
-			 								<label>
-			 									<input type="radio" name="radio" id="driving">Driving
-			 								</label>
-			 							</div>
-
-			 							<div class="radio">
-			 								<label>
-			 									<input type="radio" name="radio" id="public-transport">Public Transport
-			 								</label>
-			 							</div>
+		 							<div class="col-md-2">
+		 								<i class="fa fa-map-marker"></i>
 		 							</div>
 
-		 							<div class="col-md-6">
-										
-										<div class="radio">
-			 								<label>
-			 									<input type="radio" name="radio" id="bicycling">Bicycling
-			 								</label>
-		 								</div>
+		 							<div class="col-md-10">
+		 								Suntec Convention & Exhibition Center, 1 Raffles Boulevard, Suntec City, 039593
+		 							</div>
+		 						</div>
 
-			 							<div class="radio">
-			 								<label>
-			 									<input type="radio" name="radio" id="walking">Walking
-			 								</label>
+		 						<div class="row">
+
+		 							<div class="col-md-2">
+		 								<i class="fa fa-envelope"></i>
+		 							</div>
+
+		 							<div class="col-md-10">
+		 								Email Us:
+		 								<br>
+		 								<a href="#">PayPalInnovationLab@paypal.com</a>
+		 							</div>
+		 						</div>
+		 					</div>
+	 					</div>
+
+	 					<div class="col-md-3">
+
+	 						<h4 class="panel-title-cust">
+	 							Get Directions
+	 						</h4>
+
+	 						<form role="form">
+
+		 						<div class="form-group">
+
+		 							<label for="depart">
+		 								Departing From:
+		 							</label>
+		 							<input type="text" class="form-control" id="email">
+		 						</div>
+
+		 						<div class="form-group">
+
+		 							<label for="via">
+		 								Via (Optional):
+		 							</label>
+		 							<input type="text" class="form-control" id="via">
+		 						</div>
+
+		 						<div class="form-group">
+
+		 							<label for="mode">
+		 								Travel Mode:
+		 							</label>
+
+		 							<div class="row">
+
+		 								<div class="col-md-6">
+
+			 								<div class="radio">
+				 								<label>
+				 									<input type="radio" name="radio" id="driving">Driving
+				 								</label>
+				 							</div>
+
+				 							<div class="radio">
+				 								<label>
+				 									<input type="radio" name="radio" id="public-transport">Public Transport
+				 								</label>
+				 							</div>
 			 							</div>
-			 						</div>
-			 					</div>
 
-			 					<button type="submit" class="btn btn-primary" style="width: 100%" id="submit">
-			 						Get Directions
-			 					</button>
-	 						</div>
-	 					</form>
+			 							<div class="col-md-6">
+											
+											<div class="radio">
+				 								<label>
+				 									<input type="radio" name="radio" id="bicycling">Bicycling
+				 								</label>
+			 								</div>
+
+				 							<div class="radio">
+				 								<label>
+				 									<input type="radio" name="radio" id="walking">Walking
+				 								</label>
+				 							</div>
+				 						</div>
+				 					</div>
+
+				 					<button type="submit" class="btn btn-primary" style="width: 100%" id="submit">
+				 						Get Directions
+				 					</button>
+		 						</div>
+		 					</form>
 
 
- 					</div>
+	 					</div>
 
- 					<div class="col-md-5">
- 						<h4 class="panel-title">
- 							Directions
- 						</h4>
- 					</div>
+	 					<div class="col-md-5">
+
+	 						<h4 class="panel-title-cust">
+	 							Directions
+	 						</h4>
+
+	 						<div class="container-fluid">
+
+								<div class="panel panel-default">
+
+									<ul class="nav nav-tabs">
+
+										<li class="active" data-toggle="tab"><a href="#tab-1"><i class="fa fa-car"></i></a></li>
+										<li class=""><a href="#tab-2" data-toggle="tab"><i class="fa fa-train"></i></a></li>
+										<li class=""><a href="#tab-3" data-toggle="tab"><i class="fa fa-bicycle"></i></a></li>
+										<li class=""><a href="#tab-4" data-toggle="tab"><i class="fa fa-male"></i></a></li>
+									</ul>
+
+									
+									<div class="panel-body">
+
+										<div class="tab-content" id="schedule-tab-content">
+
+
+											<div class="tab-pane fade in active" id="tab-1">
+												Tab 1 Content
+											</div>
+
+											<div class="tab-pane fade" id="tab-2">
+												Tab 2 Content
+											</div>
+
+											<div class="tab-pane fade" id="tab-3">
+												Tab 3 Content
+											</div>
+
+											<div class="tab-pane fade" id="tab-4">
+												Tab 4 Content
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+	 					</div>
+	 				</div>
  				</div>
 			</div>			
 		</div>
 
 
-		
+
+
+		<p style="text-align: center">Be part of the Future of Money!</p>
+
+		<hr class="grey-bottom">
+
 	</body>
+
+	<footer class="footer">
+
+
+		<div class="container">
+			
+			<p class="text-muted">
+				<i class="fa fa-copyright"></i> 1999-2014 PayPal. All rights reserved
+				<span><a href="#">Privacy</a></span>
+				<span><a href="#">Legal</a></span>
+				<br>
+				Consumer advisory - PayPal Pte Ltd the holder of PayPal's stored value facility, does not require the approval of the Monetary Authority of Singapore. Users are advised to read the terms and conditions carefully
+			</p>
+		</div>
+	</footer>
 </html>

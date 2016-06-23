@@ -11,10 +11,7 @@
 			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+
 		<link rel="stylesheet" href="res/css/app.css">
 
 
@@ -31,7 +28,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="https://www.paypal.com"><img src="http://www.merchantmaverick.com/wp-content/uploads/2013/03/Paypal-Logo-2015.png" style="height: 150%;" alt="PayPal Pte Ltd"></a>
+					<a class="navbar-brand" href="https://www.paypal.com"><img src="http://www.merchantmaverick.com/wp-content/uploads/2013/03/Paypal-Logo-2015.png" alt="PayPal Pte Ltd"></a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,7 +44,7 @@
 			</div><!-- /.container -->
 		</nav>
 
-		<div class="container" style="position: relative; top: 10%" id="about-heading">
+		<div class="container" id="about-heading">
 
 			<hr class="blue-top">
 
@@ -91,7 +88,7 @@
 						PayPal is ushering in the Future of Money with the launch of its brand new PayPal Innovation Lab in Singapore. As a leader in digital payments, PayPal is bringing together its expertise and resources by fostering innovation and building capability that helps take Singapore to the next frontier in digital commerce and payments. This is a first-of-its-kind collaboration between PayPal and the Singapore FinTech ecosystem including government agencies, industry associations, consumers and universities. Through the PayPal Innovation Lab, PayPal endeavors to transform the community it is part of – by enabling researchers, students, start-ups and small businesses to embrace FinTech innovation in topics close to their hearts, and contribute to shaping the Future of Money. This year to kick-start this initiative, PayPal is calling for SMEs in the F&B industry to step forward share their challenges relating to payments.
 					</p>
 
-					<p style="font-weight: bold;">
+					<p style="font-weight: bolder;">
 						Come join us for an exciting day and a sneak peek into the Future of Money!
 					</p>
 				</div>
@@ -119,7 +116,7 @@
 						<li><a href="#pm" data-toggle="tab">PM</a></li>
 					</ul>
 
-					<div class="tab-content" id="schedule-tab-content" style="padding: 2%">
+					<div class="tab-content" id="schedule-tab-content" style="padding: 0%">
 						
 						<div class="tab-pane fade in active" id="am">
 							
@@ -155,7 +152,7 @@
 											<div class="col-md-4">
 												Welcome Address
 											</div>
-											<div class="col-md-6">
+											<div class="col-md-6 text-muted">
 												Rohan Mahadevan
 												<br>
 												Senior Vice President, APAC, PayPal
@@ -171,6 +168,67 @@
 											</div>
 										</td>
 									</tr>
+
+									<tr>
+										<td class="row">
+											<div class="col-md-2">
+												10:05
+											</div>
+											<div class="col-md-4">
+												Keynote Address
+											</div>
+											<div class="col-md-6 text-muted">
+												S Iswaran
+												<br>
+												Minister for Trade and Industry
+											</div>
+										</td>
+
+										<td class="row">
+											<div class="col-md-2">
+												12:00
+											</div>
+											<div class="col-md-10">
+												Lunch & Networking
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="row">
+											<div class="col-md-2">
+												10:15
+											</div>
+											<div class="col-md-4">
+												Industry Address
+											</div>
+											<div class="col-md-6 text-muted">
+												Economic Development Board
+											</div>
+										</td>
+
+										<td class="row">
+											<div class="col-md-2">
+												14:00
+											</div>
+											<div class="col-md-10">
+												PayPal FinTech XChange
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="row">
+											<div class="col-md-2">
+												10:25
+											</div>
+											<div class="col-md-10">
+												PayPal Innovation lab Launch Ceremony
+											</div>
+										</td>
+
+										<td></td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
@@ -181,7 +239,7 @@
 								<p>
 									Afternoon session directed to FinTech XChange!
 								</p>
-								<a href="#" class= "btn btn-primary" role="button" style="color: white; text-decoration: normal">Visit FinTect XChange Landing Page</a>
+								<a href="#" class= "btn btn-primary" role="button" id="fintech-redirect">Visit FinTect XChange Landing Page</a>
 							</div>
 						</div>
 					</div>
@@ -241,47 +299,48 @@
 
 					<div class="horizontal">
 
-					    <div class="table">
+					    <div class="row">
 
-					        <article>
+					        <div class="col-md-3">
 					        	<div class="thumbnail">
 						   			<a href="#speaker-1" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
-						   			<p>Speaker 1</p>
-									<p>Speaker 1 Detail</p>
+						   			<p class="name">Speaker 1
+						   				<br>
+										<span class="text-muted">Speaker 1 Detail</span>
+									</p>
 						   		</div>
-					        </article>
+					        </div class="col-md-3">
 
-					        <article>
+					        <div class="col-md-3">
 					        	<div class="thumbnail">
 						   			<a href="#speaker-2" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
-						   			<p>Speaker 2</p>
-									<p>Speaker 2 Detail</p>
+						   			<p class="name">Speaker 2
+						   				<br>
+										<span class="text-muted">Speaker 2 Detail</span>
+									</p>
 						   		</div>
-					        </article>
+					        </div class="col-md-3">
 
-					        <article>
+					        <div class="col-md-3">
 					        	<div class="thumbnail">
 						   			<a href="#speaker-3" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
-						   			<p>Speaker 3</p>
-									<p>Speaker 3 Detail</p>
+						   			<p class="name">Speaker 3
+						   				<br>
+										<span class="text-muted">Speaker 3 Detail</span>
+									</p>
 						   		</div>
-					        </article>
+					        </div class="col-md-3">
 
-					        <article>
+					        <div class="col-md-3">
 					        	<div class="thumbnail">
 						   			<a href="#speaker-4" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
-						   			<p>Speaker 4</p>
-									<p>Speaker 4 Detail</p>
+						   			<p class="name">Speaker 4
+						   				<br>
+										<span class="text-muted">Speaker 4 Detail</span>
+									</p>
 						   		</div>
-					        </article>
+					        </div class="col-md-3">
 
-					        <article>
-					        	<div class="thumbnail">
-					        		<a href="#speaker-5" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
-						   			<p>Speaker 5</p>
-									<p>Speaker 5 Detail</p>
-						   		</div>
-					        </article>
 					    </div>
 					</div>
 				</div>
@@ -312,11 +371,6 @@
 						</div>
 					</div>
 
-					<div class="tab-pane fade" id="speaker-5">
-						<div class="jumbotron">
-							<p>Some Info</p>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -489,7 +543,7 @@
 				<div class="panel-body">
 
 					<!-- <iframe height="450" width="100%" frameborder="0" style="border: 0" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKJyNP-diLPyMwjJkB-vOa0CZBHYaf1cE&q=Suntec+Convention+%26+Exhibition+Centre"></iframe> -->
-					<div id="gmaps"></div>
+					<div id="map"></div>
 
 	 				<div class="row">
 
@@ -590,7 +644,7 @@
 				 						</div>
 				 					</div>
 
-				 					<button type="submit" class="btn btn-primary" style="width: 100%" onclick="getUserData()">
+				 					<button type="button" class="btn btn-primary" style="width: 100%" onclick="getRoute()">
 				 						Get Directions
 				 					</button>
 		 						</div>
@@ -599,7 +653,7 @@
 
 	 					</div>
 
-	 					<div class="col-md-5">
+	 					<div class="col-md-5 avoid-click">
 
 	 						<h4 class="panel-title-cust">
 	 							Directions
@@ -637,13 +691,19 @@
 										</div>
 									</div> -->
 										
-								<ul class="b-2" id="mode">
-									<li class="b-1"><i class="fa fa-car" onclick="quarter1()"></i></li>
-									<li><i class="fa fa-train" onclick="quarter2()"></i></li>
-									<li><i class="fa fa-bicycle" onclick="quarter3()"></i></li>
-									<li><i class="fa fa-male" onclick="quarter4()"></i></li>
+								<ul class="" id="mode">
+									<li class=""><i class="fa fa-car"></i></li><li><i class="fa fa-train"></i></li><li><i class="fa fa-bicycle"></i></li><li><i class="fa fa-male"></i></li>
 									<hr class="underline">
 								</ul>
+
+								<div class="container-fluid" id="route-info">
+									<p id="route-cost"></p>
+									<p id="route-warning"></p>
+									<div>
+										<ul id="route-details">
+										</ul>
+									</div>
+								</div>
 							</div>
 	 					</div>
 	 				</div>

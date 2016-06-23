@@ -1,39 +1,15 @@
+/* HTML element */
 body {
 	/* TODO: ... */
 	background-color: #e6e4e6;
 	font-family: "PT Sans", Sans-serif;
 	padding-top: 300px;
-	padding-left: 10%;
-	padding-right: 10%;
-
+	margin: auto;
 }
 
-.container {
-	background-color: #e6e4e6;
-}
-
-.navbar-fixed-top > .container {
-	background-color: white;
-}
-
-.b-1 {
-	outline: thin dashed red;
-}
-
-.b-2 {
-	outline: thin dotted green;
-}
-
-.row {
-	min-height: 20%;
-}
-
-.panel-group {
-	padding: 5%;
-}
-
-#map {
-	height: 100%;
+tbody {
+	font-weight: bolder;
+	font-size: 9.5px;
 }
 
 table {
@@ -44,6 +20,131 @@ tr > td {
 	width: 50%;
 }
 
+hr.blue-top {
+	height: .25rem;
+  	width: 100%;
+  	margin: 0;
+  	background: #40c4ff;
+  	border: none;
+}
+
+/* class */
+
+.container {
+	background-color: #e6e4e6;
+	width: 100%;
+}
+
+.navbar-fixed-top > .container {
+	background-color: white;
+}
+
+.row {
+	min-height: 20%;
+}
+
+.panel-group {
+	padding: 5%;
+}
+
+.wrapper {
+	padding: 5%;
+}
+
+.name {
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.text-muted {
+	font-size: 11px;
+}
+
+.list-marker {
+	width: 10px;
+	text-align: center;
+}
+
+.horizontal > div > div > div > p {
+	padding: 2%;
+}
+
+.panel-title-cust {
+	color: #636163;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+.panel-heading {
+	padding-top: 0px;
+	padding-left: 20px;
+}
+
+.underline {
+	height: .25rem;
+	width: 10%;
+	margin: 0;
+	background: #40c4ff;
+	border: none;
+}
+
+.avoid-click {
+	pointer-events: none;
+}
+
+.navbar-brand > img {
+	height: 200%; 
+	position: relative; 
+	top: -10px
+}
+
+/* id */
+
+#map {
+	height: 200px;
+	width: 100%;
+}
+
+#navbar-ppil > ul > li > a {
+	text-transform: uppercase;
+	color: #9c9da0;
+	font-weight: bolder;
+}
+
+#mode {
+	padding: 0;
+	width: 100%;
+}
+
+#mode > li {
+	display: inline;
+	text-align: center;
+}
+#mode > li > i {
+	display: inline-block;
+	width: 10%;
+	padding: .75rem 0;
+	margin: 0;
+	text-decoration: none;
+	color: #030303;
+}
+
+#about-heading {
+	position: relative;
+	top: 10%;
+}
+
+#pm {
+	text-align: center;
+}
+
+#fintech-redirect {
+	color: white;
+	text-decoration: normal;
+}
+
+/* Mobile-first */
+
 @media(min-width:767px) {
     .navbar {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -53,81 +154,28 @@ tr > td {
 
 }
 
-div.horizontal {
-    height: 100%;
-    overflow: auto;
+@media only screen and (min-width: 500px) {
+	.container {
+		background-color: #e6e4e6;
+		width: 90%;
+	}
+
+	#map {
+		height: 300px;
+		width: 100%;
+	}
+
 }
 
-.table {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-}
+@media only screen and (min-width: 770px) {
+	.container {
+		background-color: #e6e4e6;
+		width: 80%;
+	}
 
-article {
-    width: 200px;
-    height: 200px;
-    display: table-cell;
-    background: #e3e3e3;
-    vertical-align: middle;
-    text-align: center;
-s}
+	#map {
+		height: 450px;
+		width: 100%;
+	}
 
-article:nth-child(2n+2)
-{
-    background: #d1d1d1;
-}
-
-#navbar-ppil > ul > li > a {
-	text-transform: uppercase;
-	color: #9c9da0;
-	font-weight: bold;
-}
-
-.panel-title-cust {
-	color: #a3a1a3;
-	font-size: 20px;
-	font-weight: 100;
-}
-
-.panel-heading {
-	padding-top: 0px;
-	padding-left: 20px;
-}
-
-hr.blue-top {
-	height: .25rem;
-  	width: 100%;
-  	margin: 0;
-  	background: #40c4ff;
-  	border: none;
-}
-
-.thumbnail {
-	height: 200px;
-}
-
-#mode > li {
-	display: inline;
-	text-align: center;
-}
-#mode > li > i {
-	display: inline-block;
-	width: 25%;
-	padding: .75rem 0;
-	margin: 0;
-	text-decoration: none;
-	color: #030303;
-}
-
-.underline {
-	height: .25rem;
-	width: 25%;
-	margin: 0;
-	background: #40c4ff;
-	border: none;
-}
-
-.avoid-click {
-	pointer-events: none;
 }

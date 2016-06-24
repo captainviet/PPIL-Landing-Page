@@ -171,7 +171,7 @@ function displayResult(result, mode) {
 	// console.log("Length: " + route.legs.length);
 
 	// navigation response compiler
-	var details = "<li style='list-style: none'><i class='fa fa-circle-o'></i> ";
+	var details = "<li style='list-style: none'><i class='fa fa-dot-circle-o'></i> ";
 	for (var l = 0; l < route.legs.length; l++) {
 		var leg = route.legs[l];
 		// console.log(leg);
@@ -182,7 +182,7 @@ function displayResult(result, mode) {
 		details += legBuilder(leg);
 
 	};
-	details += "</li><li style='list-style: none'><i class='fa fa-dot-circle-o'></i> Suntec Convention & Exhibition Center, Nicoll Hwy, Singapore</li>";
+	details += "</li><li style='list-style: none'><i class='fa fa-circle-o'></i> Suntec Convention & Exhibition Center, Nicoll Hwy, Singapore</li>";
 	// console.log(details);
 	// console.log(total_duration + "s");
 	// console.log(total_distance + "m");

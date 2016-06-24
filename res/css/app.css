@@ -1,19 +1,66 @@
+/* font face */
+@font-face {
+	font-family: paypalsans-bold;
+	src: url("../font/PayPalSansBig-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: paypalsans-light;
+	src: url("../font/PayPalSansBig-Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family: paypalsans-medium;
+	src: url("../font/PayPalSansBig-Medium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: paypalsans-regular;
+	src: url("../font/PayPalSansBig-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: paypalsans-thin;
+	src: url("../font/PayPalSansBig-Thin.otf") format("opentype");
+}
+
+
 /* HTML element */
 body {
 	/* TODO: ... */
+	background-image: url("../img/background.jpg");
 	background-color: #e6e4e6;
-	font-family: "PT Sans", Sans-serif;
-	padding-top: 300px;
-	margin: auto;
+	background-repeat: no-repeat;
+	background-size: 450%;
+	background-position: center top;
+	padding-top: 400px;
 }
 
 tbody {
-	font-weight: bolder;
-	font-size: 9.5px;
+	font-family: paypalsans-medium;
+	font-size: 16px;
+	color: #fbfbfb;
 }
 
 table {
 	table-layout: fixed;
+}
+
+body > p {
+	text-align: center;
+	font-family: paypalsans-regular;
+	font-size: 32px;
+}
+
+body > div:nth-child(2) {
+	font-family: paypalsans-light;
+	font-weight: lighter;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: -330px;
+	left: 5%;
+	width: 90%;
 }
 
 tr > td {
@@ -28,11 +75,19 @@ hr.blue-top {
   	border: none;
 }
 
+footer > div > p > span {
+	padding-left: 10px;
+}
+
+.box > div {
+	word-wrap: break-word;
+}
+
 /* class */
 
 .container {
-	background-color: #e6e4e6;
 	width: 100%;
+	padding: 0;
 }
 
 .navbar-fixed-top > .container {
@@ -41,10 +96,6 @@ hr.blue-top {
 
 .row {
 	min-height: 20%;
-}
-
-.panel-group {
-	padding: 5%;
 }
 
 .wrapper {
@@ -69,15 +120,16 @@ hr.blue-top {
 	padding: 2%;
 }
 
-.panel-title-cust {
-	color: #636163;
-	font-size: 20px;
-	font-weight: lighter;
+.panel-heading > h3 {
+	font-size: 40px;
+	font-family: paypalsans-light;
+	color: #444444;
 }
 
-.panel-heading {
-	padding-top: 0px;
-	padding-left: 20px;
+.panel-title-cust {
+	height: 30px;
+	font-family: paypalsans-medium;
+	font-size: 21px;
 }
 
 .underline {
@@ -98,6 +150,58 @@ hr.blue-top {
 	top: -10px
 }
 
+.box > .row {
+	padding: 5%;
+	border-bottom: thin solid #ececec;
+}
+
+.box > .row > .col-md-2 {
+	text-align: center;
+	color: #8c8c8c;
+}
+
+.venue-info {
+	padding: 2%;
+	margin: 0;
+	font-family: paypalsans-regular;
+	font-size: 16px;
+}
+
+.panel-body > p:nth-child(1) {
+	color: #6a6a6a;
+	font-family: paypalsans-light;
+	font-size: 18px;
+}
+
+.panel-body > p:nth-child(2) {
+	font-family: paypalsans-medium;
+	font-size: 24px;
+}
+
+.wrapper > p {
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.form-group > button {
+	width: 100%;
+}
+
+.jumbotron {
+	font-family: paypalsans-light;
+	font-size: 14px;
+	color: #f7f7f7;
+}
+
+.thumbnail > p {
+	font-family: paypalsans-bold;
+	font-size: 18px;
+}
+
+.thumbnail > p > span {
+	font-family: paypalsans-light;
+}
+
 /* id */
 
 #map {
@@ -106,9 +210,9 @@ hr.blue-top {
 }
 
 #navbar-ppil > ul > li > a {
+	font-family: paypalsans-bold;
 	text-transform: uppercase;
-	color: #9c9da0;
-	font-weight: bolder;
+	color: #444444;
 }
 
 #mode {
@@ -143,6 +247,28 @@ hr.blue-top {
 	text-decoration: normal;
 }
 
+#route-details {
+	margin-left: 0;
+}
+
+#get-directions {
+	border-left: thin solid #ececec;
+	border-right: thin solid #ececec;
+}
+
+#event-name {
+	font-size: 30px;
+}
+
+#event-loc {
+	font-size: 20px;
+}
+
+#event-time {
+	font-size: 17px;
+}
+
+
 /* Mobile-first */
 
 @media(min-width:767px) {
@@ -154,9 +280,54 @@ hr.blue-top {
 
 }
 
+@media only screen and (min-width: 350px) {
+	body {
+		background-size: 400%;
+	}
+
+	#event-name {
+		font-size: 33px;
+	}
+
+	#event-loc {
+		font-size: 23px;
+	}
+
+	#event-time {
+		font-size: 20px;
+	}
+
+}
+
+@media only screen and (min-width: 420px) {
+	body {
+		background-size: 300%;
+	}
+
+	#event-name {
+		font-size: 35px;
+	}
+
+	#event-loc {
+		font-size: 25px;
+	}
+
+	#event-time {
+		font-size: 22px;
+	}
+
+}
+
 @media only screen and (min-width: 500px) {
+	body {
+		background-size: 250%;
+	}
+
+	body > div:nth-child(2) {
+		top: -300px;
+	}
+
 	.container {
-		background-color: #e6e4e6;
 		width: 90%;
 	}
 
@@ -165,11 +336,36 @@ hr.blue-top {
 		width: 100%;
 	}
 
+	#event-name {
+		font-size: 40px;
+	}
+
+	#event-loc {
+		font-size: 30px;
+	}
+
+	#event-time {
+		font-size: 28px;
+	}
+
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 600px) {
+	body {
+		background-size: 200%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		background-size: 175%;
+	}
+
+	body > div:nth-child(2) {
+		top: -275px;
+	}
+
 	.container {
-		background-color: #e6e4e6;
 		width: 80%;
 	}
 
@@ -177,5 +373,75 @@ hr.blue-top {
 		height: 450px;
 		width: 100%;
 	}
+
+	#event-name {
+		font-size: 45px;
+	}
+
+	#event-loc {
+		font-size: 35px;
+	}
+
+	#event-time {
+		font-size: 32px;
+	}
+
+}
+
+@media only screen and (min-width: 850px) {
+	body {
+		background-size: 150%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	body {
+		padding-top: 250px;
+		background-size: 100%;
+	}
+
+	body > div:nth-child(2) {
+		top: -175px;
+	}
+
+/*	
+	For mobile first varied font size
+
+	tbody {
+		font-size: 16px;
+	}
+
+	body > p {
+		font-size: 32px;
+	}
+
+	.panel-heading > h3 {
+		font-size: 40px;
+	}
+
+	.panel-title-cust {
+		font-size: 21px;
+	}
+
+	.venue-info {
+		font-size: 16px;
+	}
+
+	.panel-body > p:nth-child(1) {
+		font-size: 18px;
+	}
+
+	.panel-body > p:nth-child(2) {
+		font-size: 24px;
+	}
+
+	.jumbotron {
+		font-size: 14px;
+	}
+
+	.thumbnail > p {
+		font-size: 18px;
+	}
+*/
 
 }

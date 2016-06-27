@@ -39,7 +39,7 @@ body {
 tbody {
 	font-family: paypalsans-medium;
 	font-size: 16px;
-	color: #fbfbfb;
+	color: #3c3c3c; /* color?? */
 }
 
 table {
@@ -79,11 +79,11 @@ footer > div > p > span {
 	padding-left: 10px;
 }
 
+/* class */
+
 .box > div {
 	word-wrap: break-word;
 }
-
-/* class */
 
 .container {
 	width: 100%;
@@ -105,6 +105,7 @@ footer > div > p > span {
 .name {
 	font-weight: bolder;
 	font-size: 15px;
+	padding: 5px;
 }
 
 .text-muted {
@@ -189,8 +190,14 @@ footer > div > p > span {
 
 .jumbotron {
 	font-family: paypalsans-light;
-	font-size: 14px;
-	color: #f7f7f7;
+	font-size: 10px;
+	color: #3c3c3c; /* color?? */
+	padding: 1%;
+	margin-bottom: 0px;
+}
+
+.thumbnail {
+	margin: auto;
 }
 
 .thumbnail > p {
@@ -200,6 +207,11 @@ footer > div > p > span {
 
 .thumbnail > p > span {
 	font-family: paypalsans-light;
+	font-size: 15px;s
+}
+
+.tab-pane {
+	padding: 5px;
 }
 
 /* id */

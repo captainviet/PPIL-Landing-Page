@@ -11,7 +11,73 @@ $(function() {
 
     $(".navbar-nav").on("click", function() {
     	$(".navbar-toggle").click();
-    })
+    });
+
+    $(".read-more").on("click", function() {
+    	$(".read-more-text").show();
+    	$(".read-more").hide();
+    });
+
+    $(document).click(function(e) {
+    	if (e.target.id == "iswaran-img") {
+			$("#iswaran-img").animate({
+	    		opacity: 0.2,
+	    	}, {
+	    		duration: 1000,
+	    		queue: false,
+	    	});
+	    	$("#iswaran-info").animate({
+	    		opacity: 1,
+	    	}, {
+	    		duration: 1000,
+	    		queue: false,
+	    	});
+    	} else {
+    		$("#iswaran-img").animate({
+	    		opacity: 1,
+	    	}, {
+	    		duration: 1000,
+	    		queue: false,
+	    	});
+	    	$("#iswaran-info").animate({
+	    		opacity: 0,
+	    	}, {
+	    		duration: 1000,
+	    		queue: false,
+	    	});
+    	}
+    });
+
+    $(document).click(function(e) {
+    	if (e.target.id == "rohan-img") {
+			$("#rohan-img").animate({
+	    		opacity: 0.2,
+	    	}, {
+	    		duration: 1000,
+	    		queue: false,
+	    	});
+	    	$("#rohan-info").animate({
+	    		opacity: 1,
+	    	}, {
+	    		duration: 1000,
+	    		queue: false,
+	    	});
+    	} else {
+    		$("#rohan-img").animate({
+	    		opacity: 1,
+	    	}, {
+	    		duration: 1000,
+	    		queue: false,
+	    	});
+	    	$("#rohan-info").animate({
+	    		opacity: 0,
+	    	}, {
+	    		duration: 1000,
+	    		queue: false,
+	    	});
+    	}
+    });
+
 });
 
 // global variables for map manipulation
@@ -219,16 +285,16 @@ function displayResult(result, mode) {
 
 // function for compiling details for certain legs in route
 function legBuilder(leg) {
-	var result = leg.start_address + "\n" + "<ul>";
+	var result = leg.start_address + "\n" + "<ul class='fa-ul'>";
 	var steps = leg.steps;
 	var style;
 	for (var s = 0; s < steps.length; s++) {
 		if (steps[s].instructions.toLowerCase().includes("left")) {
-			style = "<li style='list-style: none'><i class='fa fa-arrow-left list-marker'></i> "
+			style = "<li><i class='fa-li fa fa-arrow-left'></i> "
 		} else if (steps[s].instructions.toLowerCase().includes("right")) {
-			style = "<li style='list-style: none'><i class='fa fa-arrow-right list-marker'></i> "
+			style = "<li><i class='fa-li fa fa-arrow-right'></i> "
 		} else {
-			style = "<li style='list-style: none'><i class='fa fa-long-arrow-up list-marker'></i> ";
+			style = "<li><i class='fa-li fa fa-long-arrow-up'></i> ";
 		}
 		var instruction = style + steps[s].instructions + "</li>";
 		result += instruction;

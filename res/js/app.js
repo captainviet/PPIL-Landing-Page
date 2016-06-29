@@ -4,78 +4,72 @@ $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+            scrollTop: $($anchor.attr('href')).offset().top - 50
+        }, 2000, 'easeInOutExpo');
         event.preventDefault();
     });
 
+    $("#get-route").bind("click", function(event) {
+    	$("html, body").stop().animate({
+    		scrollTop: $("#venue-heading").offset().top - 50
+    	}, 2000, 'easeInOutExpo');
+    })
+
     $(".navbar-nav").on("click", function() {
-    	$(".navbar-toggle").click();
-    });
-
-    $(".read-more").on("click", function() {
-    	$(".read-more-text").show();
-    	$(".read-more").hide();
-    });
-
-    $(document).click(function(e) {
-    	if (e.target.id == "iswaran-img") {
-			$("#iswaran-img").animate({
-	    		opacity: 0.2,
-	    	}, {
-	    		duration: 1000,
-	    		queue: false,
-	    	});
-	    	$("#iswaran-info").animate({
-	    		opacity: 1,
-	    	}, {
-	    		duration: 1000,
-	    		queue: false,
-	    	});
-    	} else {
-    		$("#iswaran-img").animate({
-	    		opacity: 1,
-	    	}, {
-	    		duration: 1000,
-	    		queue: false,
-	    	});
-	    	$("#iswaran-info").animate({
-	    		opacity: 0,
-	    	}, {
-	    		duration: 1000,
-	    		queue: false,
-	    	});
+    	if ($(window).width() < 768) {
+    		$(".navbar-toggle").click();
     	}
     });
 
-    $(document).click(function(e) {
-    	if (e.target.id == "rohan-img") {
-			$("#rohan-img").animate({
-	    		opacity: 0.2,
-	    	}, {
-	    		duration: 1000,
-	    		queue: false,
-	    	});
-	    	$("#rohan-info").animate({
-	    		opacity: 1,
-	    	}, {
-	    		duration: 1000,
-	    		queue: false,
-	    	});
+    $(".read-more").click(function() {
+    	var read_more_id = this.id;
+    	var type = $(this).prop("tagName").toLowerCase();
+    	if (type == "img") {
+    		imgReadMore(read_more_id);
     	} else {
-    		$("#rohan-img").animate({
-	    		opacity: 1,
-	    	}, {
-	    		duration: 1000,
-	    		queue: false,
-	    	});
-	    	$("#rohan-info").animate({
-	    		opacity: 0,
-	    	}, {
-	    		duration: 1000,
-	    		queue: false,
-	    	});
+    		pReadMore(read_more_id);
     	}
+    });
+
+    function pReadMore(id) {
+    	$("#" + id).hide();
+    	$("#" + id + "-info").show();
+    }
+
+    function imgReadMore(id) {
+    	$("#" + id).animate({
+    		opacity: 0.2,
+    	}, {
+    		duration: 500,
+    		queue: false,
+    	});
+    	$("#" + id + "-info").animate({
+    		opacity: 1,
+    	}, {
+    		duration: 500,
+    		queue: false,
+    	});
+    };
+
+    $(document).click(function(e) {
+    	var id = e.target.id;
+    	var img = ["rohan-img", "iswaran-img"];
+    	for (var i = 0; i < img.length; i++) {
+	    	if (id != img[i]) {
+				$("#" + img[i]).animate({
+		    		opacity: 1,
+		    	}, {
+		    		duration: 500,
+		    		queue: false,
+		    	});
+		    	$("#" + img[i] + "-info").animate({
+		    		opacity: 0,
+		    	}, {
+		    		duration: 500,
+		    		queue: false,
+		    	});
+		    }
+		}
     });
 
 });

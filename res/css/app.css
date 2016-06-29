@@ -1,44 +1,41 @@
 /* font face */
+/*Paypal Sans Big*/
 @font-face {
-	font-family: paypalsans-bold;
-	src: url("../font/PayPalSansBig-Bold.otf") format("opentype");
+  font-family: "pp-sans-big-bold";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Bold.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Bold.eot?#iefix") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Bold.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Bold.svg") format("svg");
 }
-
 @font-face {
-	font-family: paypalsans-light;
-	src: url("../font/PayPalSansBig-Light.otf") format("opentype");
+  font-family: "pp-sans-big-light";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.eot?#iefix") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.svg") format("svg");
 }
-
 @font-face {
-	font-family: paypalsans-medium;
-	src: url("../font/PayPalSansBig-Medium.otf") format("opentype");
+  font-family: "pp-sans-big-medium";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.eot?#iefix") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.svg") format("svg");
 }
-
 @font-face {
-	font-family: paypalsans-regular;
-	src: url("../font/PayPalSansBig-Regular.otf") format("opentype");
+  font-family: "pp-sans-big-regular";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.eot?#iefix") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.svg") format("svg");
 }
-
 @font-face {
-	font-family: paypalsans-thin;
-	src: url("../font/PayPalSansBig-Thin.otf") format("opentype");
+  font-family: "pp-sans-big-thin";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Thin.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Thin.eot?#iefix") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Thin.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Thin.svg") format("svg");
 }
 
 
 /* HTML element */
 body {
 	/* TODO: ... */
-	background-image: url("../img/background.jpg");
-	background-color: #e6e4e6;
-	background-repeat: no-repeat;
-	background-size: 450%;
-	background-position: center top;
+	background: #e6e4e6 url("../img/background.jpg") no-repeat center top /450%;
 	padding-top: 400px;
 }
 
 tbody {
-	font-family: paypalsans-medium;
-	font-size: 16px;
+	font: 13px pp-sans-big-medium;
 	color: #3c3c3c; /* color?? */
 }
 
@@ -48,13 +45,11 @@ table {
 
 body > p {
 	text-align: center;
-	font-family: paypalsans-regular;
-	font-size: 32px;
+	font: 29px pp-sans-big-regular;
 }
 
 body > div:nth-child(2) {
-	font-family: paypalsans-light;
-	font-weight: lighter;
+	font: lighter pp-sans-big-light;
 	text-align: center;
 	color: white;
 	position: relative;
@@ -87,7 +82,10 @@ footer > div > p > span {
 
 .container {
 	width: 100%;
-	padding: 0;
+}
+
+.navbar-fixed-top {
+	width: initial;
 }
 
 .navbar-fixed-top > .container {
@@ -103,8 +101,7 @@ footer > div > p > span {
 }
 
 .name {
-	font-weight: bolder;
-	font-size: 15px;
+	font: bolder 12px;
 	padding: 5px;
 }
 
@@ -117,17 +114,15 @@ footer > div > p > span {
 }
 
 .panel-heading > h3 {
-	font-size: 40px;
-	font-family: paypalsans-light;
+	font: 35px pp-sans-big-light;
 	color: #444444;
 	margin: auto;
 	padding: 1%;
 }
 
 .panel-title-cust {
-	height: 30px;
-	font-family: paypalsans-medium;
-	font-size: 21px;
+	height: 25px;
+	font: 21px pp-sans-big-medium;
 }
 
 .underline {
@@ -143,9 +138,8 @@ footer > div > p > span {
 }
 
 .navbar-brand > img {
-	height: 200%; 
-	position: relative; 
-	top: -10px
+	height: 100%; 
+	
 }
 
 .box > .row {
@@ -161,8 +155,7 @@ footer > div > p > span {
 .venue-info {
 	padding: 2%;
 	margin: 0;
-	font-family: paypalsans-regular;
-	font-size: 16px;
+	font: 13px pp-sans-big-regular;
 }
 
 .panel-body {
@@ -171,18 +164,15 @@ footer > div > p > span {
 
 .panel-body > p:nth-child(1) {
 	color: #6a6a6a;
-	font-family: paypalsans-light;
-	font-size: 15px;
+	font: 15px pp-sans-big-light;
 }
 
 .panel-body > p:nth-child(2) {
-	font-family: paypalsans-medium;
-	font-size: 18px;
+	font: 16px pp-sans-big-medium;
 }
 
 .wrapper > p {
-	font-weight: bolder;
-	font-size: 20px;
+	font: bolder 17px;
 }
 
 .form-group > button {
@@ -190,8 +180,7 @@ footer > div > p > span {
 }
 
 .speaker-info {
-	font-family: paypalsans-light;
-	font-size: 10px;
+	font: 7px pp-sans-big-light;
 	color: #3c3c3c; /* color?? */
 	padding: 3%;
 	margin-bottom: 0px;
@@ -207,21 +196,19 @@ footer > div > p > span {
 }
 
 .thumbnail > p {
-	font-family: paypalsans-bold;
-	font-size: 18px;
+	font: 15px pp-sans-big-bold;
 }
 
 .thumbnail > p > span {
-	font-family: paypalsans-light;
-	font-size: 15px;s
+	font: 12px pp-sans-big-light;
 }
 
 .tab-pane {
-	padding: 5px;
+	padding: 7px;
 }
 
 .fa-ul {
-	font-family: FontAwesome;
+	font: FontAwesome;
 }
 
 .col-xs-2 {
@@ -244,7 +231,7 @@ footer > div > p > span {
 }
 
 #navbar-ppil > ul > li > a {
-	font-family: paypalsans-bold;
+	font: pp-sans-big-bold;
 	text-transform: uppercase;
 	color: #444444;
 }
@@ -291,15 +278,15 @@ footer > div > p > span {
 }
 
 #event-name {
-	font-size: 30px;
+	font: 30px;
 }
 
 #event-loc {
-	font-size: 20px;
+	font: 20px;
 }
 
 #event-time {
-	font-size: 17px;
+	font: 17px;
 }
 
 
@@ -373,10 +360,68 @@ footer > div > p > span {
 		display: inline;
 	}
 
-	#map {
-		height: 300px;
-		width: 100%;
+	tbody {
+		font-size: 16px;
 	}
+
+	body > p {
+		font-size: 32px;
+	}
+
+	.name {
+		font-size: 15px;
+	}
+
+	.text-muted {
+		font-size: 13px;
+	}
+
+	.horizontal > div > div > div > p {
+		padding: 2%;
+	}
+
+	.panel-heading > h3 {
+		font-size: 40px;
+	}
+
+	.panel-title-cust {
+		font-size: 21px;
+	}
+
+	.venue-info {
+		font-size: 16px;
+	}
+
+	.panel-body > p:nth-child(1) {
+		font-size: 15px;
+	}
+
+	.panel-body > p:nth-child(2) {
+		font-size: 18px;
+	}
+
+	.wrapper > p {
+		font-size: 20px;
+	}
+
+	.speaker-info {
+		font-size: 10px;
+	}
+
+	.thumbnail > p {
+		font-size: 18px;
+	}
+
+	.thumbnail > p > span {
+		font-size: 15px;
+	}
+
+	.navbar-brand > img {
+		height: 200%;
+		position: relative; 
+		top: -10px;
+	}
+
 
 	#event-name {
 		font-size: 40px;

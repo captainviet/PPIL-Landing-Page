@@ -133,7 +133,6 @@ function initMap() {
 	directionsDisplay = new google.maps.DirectionsRenderer(options);
 	directionsDisplay.setMap(map);
 
-
 };
 
 function getRoute() {
@@ -163,7 +162,20 @@ function getRoute() {
 		// console.log(via);
 		var mode = $("input[name='mode']:checked").val();
 		// console.log(mode);
-
+		switch (mode) {
+			case "DRIVING":
+				quarter1();
+				break;
+			case "TRANSIT":
+				quarter2();
+				break;
+			case "BICYCLING":
+				quarter3();
+				break;
+			case "WALKING":
+				quarter4();
+				break;
+		}
 		// request compilation
 		var request;
 		if (mode != "TRANSIT" && via != "") {
@@ -249,23 +261,23 @@ function displayResult(result, mode) {
 	switch (mode) {
 		case "DRIVING":
 			mode = "Drive";
-			quarter1();
 			break;
 		case "TRANSIT":
 			mode = "Ride";
-			quarter2();
 			break;
 		case "BICYCLING":
 			mode = "Cycle";
-			quarter3();
 			break;
 		case "WALKING":
 			mode = "Walk";
-			quarter4();
 			break;
 	}
 	// show route cost in terms of time and distance
-	$("#route-cost").text(mode + " " + (total_distance/1000).toFixed(1) + " km, " + (total_duration/60).toFixed(1) + " min");
+	if (total_duration < 3600) {
+		$("#route-cost").text(mode + " " + (total_distance/1000).toFixed(1) + " km, " + (total_duration/60).toFixed(1) + " min");
+	} else {
+		$("#route-cost").text(mode + " " + (total_distance/1000).toFixed(1) + " km, " + (total_duration/3600).toFixed(0) + " h " + (total_duration/60).toFixed(0) % 60 + " min");
+	}
 	// show warnings from GMaps
 	if (route.warnings.length != 0) {
 		$("#route-warning").text(route.warnings[0]);

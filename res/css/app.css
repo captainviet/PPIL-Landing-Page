@@ -50,6 +50,7 @@ body > p {
 
 body > div:nth-child(2) {
 	font: lighter pp-sans-big-light;
+	text-shadow: 1px 1px #000000;
 	text-align: center;
 	color: white;
 	position: relative;
@@ -71,7 +72,12 @@ hr.blue-top {
 }
 
 footer > div > p > span {
-	padding-left: 10px;
+	margin: 0;
+	margin-top: 5px;
+}
+
+div .read-more {
+	width: 80%;
 }
 
 /* class */
@@ -165,9 +171,10 @@ footer > div > p > span {
 .panel-body > p:nth-child(1) {
 	color: #6a6a6a;
 	font: 15px pp-sans-big-light;
+	margin-bottom: 5px;
 }
 
-.panel-body > p:nth-child(2) {
+.panel-body > p:nth-child(3) {
 	font: 16px pp-sans-big-medium;
 }
 
@@ -349,7 +356,8 @@ footer > div > p > span {
 	}
 
 	.container {
-		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 
 	.read-more {
@@ -416,13 +424,6 @@ footer > div > p > span {
 		font-size: 15px;
 	}
 
-	.navbar-brand > img {
-		height: 200%;
-		position: relative; 
-		top: -10px;
-	}
-
-
 	#event-name {
 		font-size: 40px;
 	}
@@ -452,8 +453,15 @@ footer > div > p > span {
 		top: -275px;
 	}
 
+	.navbar-brand > img {
+		height: 200%;
+		position: relative; 
+		top: -10px;
+	}
+
 	.container {
-		width: 80%;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 
 	#map {

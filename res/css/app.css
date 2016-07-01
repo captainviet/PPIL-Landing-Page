@@ -1,0 +1,559 @@
+/* font face */
+/*Paypal Sans Big*/
+@font-face {
+  font-family: "pp-sans-big-bold";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Bold.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Bold.eot?#iefix") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Bold.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Bold.svg") format("svg");
+}
+@font-face {
+  font-family: "pp-sans-big-light";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.eot?#iefix") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Light.svg") format("svg");
+}
+@font-face {
+  font-family: "pp-sans-big-medium";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.eot?#iefix") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.svg") format("svg");
+}
+@font-face {
+  font-family: "pp-sans-big-regular";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.eot?#iefix") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Regular.svg") format("svg");
+}
+@font-face {
+  font-family: "pp-sans-big-thin";
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Thin.eot");
+  src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Thin.eot?#iefix") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Thin.woff") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/headlinedark/festivo1.ttf") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Thin.svg") format("svg");
+}
+
+
+/* HTML element */
+body {
+	/* TODO: ... */
+	background: #e6e4e6 url("../img/background.jpg") no-repeat center top /450%;
+	padding-top: 400px;
+}
+
+tbody {
+	font: 13px pp-sans-big-medium;
+	color: #3c3c3c; /* color?? */
+}
+
+table {
+	table-layout: fixed;
+}
+
+body > p {
+	text-align: center;
+	font: 29px pp-sans-big-regular;
+}
+
+body > div:nth-child(2) {
+	font: lighter pp-sans-big-light;
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+	color: white;
+	position: relative;
+	top: -330px;
+	left: 5%;
+	width: 90%;
+}
+
+tr > td {
+	width: 50%;
+}
+
+hr.blue-top {
+	height: .25rem;
+  	width: 100%;
+  	margin: 0;
+  	background: #40c4ff;
+  	border: none;
+}
+
+footer > div > p > span {
+	margin: 0;
+	margin-top: 5px;
+}
+
+div .read-more {
+	width: 80%;
+}
+
+/* class */
+
+.box > div {
+	word-wrap: break-word;
+}
+
+.container {
+	width: 100%;
+}
+
+.navbar-fixed-top {
+	width: initial;
+}
+
+.navbar-fixed-top > .container {
+	background-color: white;
+}
+
+.row {
+	min-height: 20%;
+}
+
+.wrapper {
+	padding: 5%;
+}
+
+.name {
+	font: bolder 12px;
+	padding: 5px;
+}
+
+.text-muted {
+	font-size: 11px;
+}
+
+.horizontal > div > div > div > p {
+	padding: 2%;
+}
+
+.panel-heading > h3 {
+	font: 35px pp-sans-big-light;
+	color: #444444;
+	margin: auto;
+	padding: 1%;
+}
+
+.panel-title-cust {
+	height: 25px;
+	font: 21px pp-sans-big-medium;
+}
+
+.underline {
+	height: .25rem;
+	width: 10%;
+	margin: 0;
+	background: #40c4ff;
+	border: none;
+}
+
+.avoid-click {
+	pointer-events: none;
+}
+
+.navbar-brand > img {
+	height: 100%; 
+	
+}
+
+.box > .row {
+	padding: 5%;
+	border-bottom: thin solid #ececec;
+}
+
+.box > .row > .col-md-2 {
+	text-align: center;
+	color: #8c8c8c;
+}
+
+.venue-info {
+	padding: 2%;
+	margin: 0;
+	font: 13px pp-sans-big-regular;
+}
+
+.panel-body {
+	padding: 3%;
+}
+
+.panel-body > p:nth-child(1) {
+	color: #6a6a6a;
+	font: 15px pp-sans-big-light;
+	margin-bottom: 5px;
+}
+
+.panel-body > p:nth-child(3) {
+	font: 16px pp-sans-big-medium;
+}
+
+.wrapper > p {
+	font: bolder 17px;
+}
+
+.form-group > button {
+	width: 100%;
+}
+
+.speaker-info {
+	font: 7px pp-sans-big-light;
+	color: #3c3c3c; /* color?? */
+	padding: 3%;
+	margin-bottom: 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.thumbnail {
+	margin: auto;
+}
+
+.thumbnail > p {
+	font: 15px pp-sans-big-bold;
+}
+
+.thumbnail > p > span {
+	font: 12px pp-sans-big-light;
+}
+
+.tab-pane {
+	padding: 7px;
+}
+
+.fa-ul {
+	font: FontAwesome;
+}
+
+.col-xs-2 {
+	text-align: center;
+}
+
+.read-more {
+	display: block;
+}
+
+.read-more-text {
+	display: none;
+}
+
+/* id */
+
+#map {
+	height: 200px;
+	width: 100%;
+}
+
+#navbar-ppil > ul > li > a {
+	font: pp-sans-big-bold;
+	text-transform: uppercase;
+	color: #444444;
+}
+
+#mode {
+	padding: 0;
+	width: 100%;
+}
+
+#mode > li {
+	display: inline;
+	text-align: center;
+}
+#mode > li > i {
+	display: inline-block;
+	width: 10%;
+	padding: .75rem 0;
+	margin: 0;
+	text-decoration: none;
+	color: #030303;
+}
+
+#about-heading {
+	position: relative;
+	top: 10%;
+}
+
+#pm {
+	text-align: center;
+}
+
+#fintech-redirect {
+	color: white;
+	text-decoration: normal;
+}
+
+#route-details {
+	margin-left: 0;
+}
+
+#get-directions {
+	border-left: thin solid #ececec;
+	border-right: thin solid #ececec;
+}
+
+#event-name {
+	font: 30px;
+}
+
+#event-loc {
+	font: 20px;
+}
+
+#event-time {
+	font: 17px;
+}
+
+
+/* Mobile-first */
+
+@media(min-width:767px) {
+    .navbar {
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+}
+
+@media only screen and (min-width: 350px) {
+	body {
+		background-size: 400%;
+	}
+
+	#event-name {
+		font-size: 33px;
+	}
+
+	#event-loc {
+		font-size: 23px;
+	}
+
+	#event-time {
+		font-size: 20px;
+	}
+
+}
+
+@media only screen and (min-width: 420px) {
+	body {
+		background-size: 300%;
+	}
+
+	#event-name {
+		font-size: 35px;
+	}
+
+	#event-loc {
+		font-size: 25px;
+	}
+
+	#event-time {
+		font-size: 22px;
+	}
+
+}
+
+@media only screen and (min-width: 500px) {
+	body {
+		background-size: 250%;
+	}
+
+	body > div:nth-child(2) {
+		top: -300px;
+	}
+
+	.container {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.read-more {
+		display: none;
+	}
+
+	.read-more-text {
+		display: inline;
+	}
+
+	tbody {
+		font-size: 16px;
+	}
+
+	body > p {
+		font-size: 32px;
+	}
+
+	.name {
+		font-size: 15px;
+	}
+
+	.text-muted {
+		font-size: 13px;
+	}
+
+	.horizontal > div > div > div > p {
+		padding: 2%;
+	}
+
+	.panel-heading > h3 {
+		font-size: 40px;
+	}
+
+	.panel-title-cust {
+		font-size: 21px;
+	}
+
+	.venue-info {
+		font-size: 16px;
+	}
+
+	.panel-body > p:nth-child(1) {
+		font-size: 15px;
+	}
+
+	.panel-body > p:nth-child(2) {
+		font-size: 18px;
+	}
+
+	.wrapper > p {
+		font-size: 20px;
+	}
+
+	.speaker-info {
+		font-size: 10px;
+	}
+
+	.thumbnail > p {
+		font-size: 18px;
+	}
+
+	.thumbnail > p > span {
+		font-size: 15px;
+	}
+
+	#event-name {
+		font-size: 40px;
+	}
+
+	#event-loc {
+		font-size: 30px;
+	}
+
+	#event-time {
+		font-size: 28px;
+	}
+
+}
+
+@media only screen and (min-width: 600px) {
+	body {
+		background-size: 200%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		background-size: 175%;
+	}
+
+	body > div:nth-child(2) {
+		top: -275px;
+	}
+
+	.navbar-brand > img {
+		height: 200%;
+		position: relative; 
+		top: -10px;
+	}
+
+	.container {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	#map {
+		height: 450px;
+		width: 100%;
+	}
+
+	#event-name {
+		font-size: 45px;
+	}
+
+	#event-loc {
+		font-size: 35px;
+	}
+
+	#event-time {
+		font-size: 32px;
+	}
+
+}
+
+@media only screen and (min-width: 850px) {
+	body {
+		background-size: 150%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	body {
+		padding-top: 250px;
+		background-size: 100%;
+	}
+
+	body > div:nth-child(2) {
+		top: -175px;
+	}
+
+	.about-heading .panel-body {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+/*	
+	For mobile first varied font size
+
+	tbody {
+		font-size: 16px;
+	}
+
+	body > p {
+		font-size: 32px;
+	}
+
+	.panel-heading > h3 {
+		font-size: 40px;
+	}
+
+	.panel-title-cust {
+		font-size: 21px;
+	}
+
+	.venue-info {
+		font-size: 16px;
+	}
+
+	.panel-body > p:nth-child(1) {
+		font-size: 18px;
+	}
+
+	.panel-body > p:nth-child(2) {
+		font-size: 24px;
+	}
+
+	.jumbotron {
+		font-size: 14px;
+	}
+
+	.thumbnail > p {
+		font-size: 18px;
+	}
+*/
+
+}
+
+@media only screen and (min-width: 1150px) {
+	body {
+		padding-top: 350px;
+	}
+
+		body > div:nth-child(2) {
+		top: -275px;
+	}
+
+
+}

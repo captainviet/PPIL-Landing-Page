@@ -135,7 +135,7 @@ function initMap() {
 
 };
 
-function getRoute() {
+function getRoute(event) {
 
 
 	event.preventDefault();

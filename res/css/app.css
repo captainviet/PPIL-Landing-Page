@@ -198,15 +198,22 @@ div .read-more {
 	pointer-events: none;
 }
 
-.thumbnail {
-	margin: auto;
-}
-
-.thumbnail > p {
+.headshot > p {
 	font: 15px pp-sans-big-bold;
 }
 
-.thumbnail > p > span {
+.headshot {
+	text-align: center;
+}
+
+.headshot > img {
+	border-radius: 50%;
+	border: medium solid #40c4ff;
+	margin: 20px;
+
+}
+
+.headshot > p > span {
 	font: 12px pp-sans-big-light;
 }
 
@@ -228,6 +235,25 @@ div .read-more {
 
 .read-more-text {
 	display: none;
+}
+
+.headshot {
+	text-align: center;	
+}
+
+.headshot > img {
+	max-width: 60%;
+	border-radius: 50%;
+	border: medium solid #40c4ff;
+
+}
+
+.blur-filter {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
 }
 
 /* id */
@@ -416,11 +442,11 @@ div .read-more {
 		font-size: 10px;
 	}
 
-	.thumbnail > p {
+	.headshot > p {
 		font-size: 18px;
 	}
 
-	.thumbnail > p > span {
+	.headshot > p > span {
 		font-size: 15px;
 	}
 
@@ -539,7 +565,7 @@ div .read-more {
 		font-size: 14px;
 	}
 
-	.thumbnail > p {
+	.headshot > p {
 		font-size: 18px;
 	}
 */

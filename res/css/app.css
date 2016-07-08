@@ -198,20 +198,20 @@ div .read-more {
 	pointer-events: none;
 }
 
+.headshot {
+	text-align: center;	
+}
+
+.headshot > img {
+	max-width: 60%;
+/*	border-radius: 50%;
+	border: medium solid #40c4ff;*/
+}
+
 .headshot > p {
 	font: 15px pp-sans-big-bold;
 }
 
-.headshot {
-	text-align: center;
-}
-
-.headshot > img {
-	border-radius: 50%;
-	border: medium solid #40c4ff;
-	margin: 20px;
-
-}
 
 .headshot > p > span {
 	font: 12px pp-sans-big-light;
@@ -237,23 +237,16 @@ div .read-more {
 	display: none;
 }
 
-.headshot {
-	text-align: center;	
-}
-
-.headshot > img {
-	max-width: 60%;
-	border-radius: 50%;
-	border: medium solid #40c4ff;
-
-}
-
 .blur-filter {
     -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
     -o-filter: blur(2px);
     -ms-filter: blur(2px);
     filter: blur(2px);
+}
+
+.container-fluid > .row {
+	padding: 2%;
 }
 
 /* id */
@@ -506,7 +499,6 @@ div .read-more {
 	#event-time {
 		font-size: 32px;
 	}
-
 }
 
 @media only screen and (min-width: 850px) {
@@ -529,47 +521,6 @@ div .read-more {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
-
-/*	
-	For mobile first varied font size
-
-	tbody {
-		font-size: 16px;
-	}
-
-	body > p {
-		font-size: 32px;
-	}
-
-	.panel-heading > h3 {
-		font-size: 40px;
-	}
-
-	.panel-title-cust {
-		font-size: 21px;
-	}
-
-	.venue-info {
-		font-size: 16px;
-	}
-
-	.panel-body > p:nth-child(1) {
-		font-size: 18px;
-	}
-
-	.panel-body > p:nth-child(2) {
-		font-size: 24px;
-	}
-
-	.jumbotron {
-		font-size: 14px;
-	}
-
-	.headshot > p {
-		font-size: 18px;
-	}
-*/
-
 }
 
 @media only screen and (min-width: 1150px) {

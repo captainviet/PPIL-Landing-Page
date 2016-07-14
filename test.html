@@ -77,12 +77,33 @@
 
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 headshot">
-							<img src="http://i.kinja-img.com/gawker-media/image/upload/x7ewqxys85g8txua8ywe.jpg">
-				   			<p class="name">Elon Musk
+						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 headshot" data-toggle="modal" data-target="#rob-findlay">
+							<img src="res/img/profile-rob-findlay.jpg">
+				   			<p class="name">Rob Findlay
 				   				<br>
-								<span>Founder of PayPal</span>
+								<span>Founder, Next Bank</span>
 							</p>
+						</div>
+
+						<div class="modal fade" id="rob-findlay" tabindex="-1" role="dialog" aria-labelledby="rob-findlay-label" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<h4 class="modal-title" id="rob-findlay-label">Rob Findlay</h4>
+									</div>
+
+									<div class="modal-body">
+										Some Info
+									</div>
+
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
 						</div>
 
 						<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 headshot">
@@ -174,6 +195,40 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="bd-example">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="form-control-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="form-control-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 				<!-- <div class="container-fluid">
 					<div class="row">

@@ -199,13 +199,12 @@ div .read-more {
 }
 
 .headshot {
-	text-align: center;	
+	text-align: center;
+	padding: 0;
 }
 
 .headshot > img {
-	max-width: 60%;
-/*	border-radius: 50%;
-	border: medium solid #40c4ff;*/
+	max-width: 80%;
 }
 
 .headshot > p {

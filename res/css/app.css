@@ -314,6 +314,10 @@ div .read-more {
 	font: 17px;
 }
 
+#schedule-heading ul > li {
+	font: 2rem pp-sans-big-bold;
+}
+
 
 /* Mobile-first */
 

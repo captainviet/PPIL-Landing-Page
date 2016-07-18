@@ -189,15 +189,9 @@ function getRoute(event) {
 	try {
 		// user input collection
 		var origin_location = autocompleteOrigin.getPlace().geometry.location;
-		// console.log(origin_location);
-		// console.log(autocompleteOrigin.getPlace().formatted_address);
 		var orig = new google.maps.LatLng(origin_location.lat(), origin_location.lng());
-		// console.log(orig.lat(), orig.lng());
 		var dest = new google.maps.LatLng(1.2936604, 103.857193);
-		// console.log(dest);
 		var directionsService = new google.maps.DirectionsService();
-		// var via = $("#via").val();
-		// console.log(autocompleteVia.getPlace());
 		var via;
 		if (autocompleteVia.getPlace() == null) {
 			via = "";
@@ -205,9 +199,7 @@ function getRoute(event) {
 			var via_location = autocompleteVia.getPlace().geometry.location;
 			via = new google.maps.LatLng(via_location.lat(), via_location.lng());
 		}
-		// console.log(via);
 		var mode = $("input[name='mode']:checked").val();
-		// console.log(mode);
 		switch (mode) {
 			case "DRIVING":
 				quarter1();
@@ -243,12 +235,9 @@ function getRoute(event) {
 				region: "SG"
 			}
 		}
-		// console.log(request);
 
 		// request submission and response handler
 		directionsService.route(request, function(result, status) {
-			// console.log(result);
-			// console.log(status);
 			switch (status) {
 				// if a response is available
 				case google.maps.DirectionsStatus.OK:
@@ -282,17 +271,14 @@ function displayResult(result, mode) {
 	
 	// GMaps response handler
 	var route = result.routes[0];
-	// console.log(route);
 	var warnings = route.warnings;
 	var total_distance = 0;
 	var total_duration = 0;
-	// console.log("Length: " + route.legs.length);
 
 	// navigation response compiler
 	var details = "<li style='list-style: none'><i class='fa fa-dot-circle-o'></i> ";
 	for (var l = 0; l < route.legs.length; l++) {
 		var leg = route.legs[l];
-		// console.log(leg);
 
 		// general info computation
 		total_distance += leg.distance.value;
@@ -301,9 +287,6 @@ function displayResult(result, mode) {
 
 	};
 	details += "</li><li style='list-style: none'><i class='fa fa-circle-o'></i> Suntec Convention & Exhibition Center, Nicoll Hwy, Singapore</li>";
-	// console.log(details);
-	// console.log(total_duration + "s");
-	// console.log(total_distance + "m");
 	switch (mode) {
 		case "DRIVING":
 			mode = "Drive";
@@ -332,6 +315,8 @@ function displayResult(result, mode) {
 	}
 	// show route details (navigation)
 	$("#route-details").html(details);
+	var height = $(".col-md-5").height();
+	$("#get-directions").height(height);
     autocompleteVia.set("place", null);
 
 };
@@ -353,19 +338,12 @@ function legBuilder(leg) {
 		result += instruction;
 	}
 	result += "</ul>";
-	// console.log(result);
 	return result;
 }
 
 // function for displaying error message in warning placeholder
 function displayError(errorMessage) {
-	// console.log(errorMessage)
 	$("#route-cost").empty();
 	$("#route-details").empty();
 	$("#route-warning").text(errorMessage);
 };
-
-// This example displays an address form, using the autocomplete feature 
-// of the Google Places API to help users fill in the information. 
-// This example requires the Places library. Include the libraries=places 
-// parameter when you first load the API. For example: // 

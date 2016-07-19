@@ -82,6 +82,11 @@ $(function() {
 
     $("[data-toggle='tooltip']").tooltip();
 
+    $(document).on("ready", function() {
+	    var img = new Image;
+	    img.src = "res/img/table-background.png";
+	    $(".wrapper").height($(".wrapper").height() * img.width/img.height);
+	});
 });
 
 // global variables for map manipulation

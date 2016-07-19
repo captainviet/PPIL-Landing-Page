@@ -103,7 +103,7 @@ div .read-more {
 }
 
 .wrapper {
-	padding: 5%;
+	padding: 10%;
 }
 
 .name {
@@ -281,6 +281,7 @@ div .read-more {
 
 #pm {
 	text-align: center;
+	background: #e6e4e6 url("../img/table-background.png") no-repeat center top /100%;
 }
 
 #fintech-redirect {

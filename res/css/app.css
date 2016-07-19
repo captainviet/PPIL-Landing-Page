@@ -64,7 +64,7 @@ tr > td {
 }
 
 hr.blue-top {
-	height: .25rem;
+	height: 2.5px;
   	width: 100%;
   	margin: 0;
   	background: #40c4ff;
@@ -132,7 +132,7 @@ div .read-more {
 }
 
 .underline {
-	height: .25rem;
+	height: 2.5px;
 	width: 10%;
 	margin: 0;
 	background: #40c4ff;
@@ -143,9 +143,8 @@ div .read-more {
 	pointer-events: none;
 }
 
-.navbar-brand > img {
-	height: 100%; 
-	
+.navbar-brand {
+	padding: 5px;
 }
 
 .box > .row {
@@ -176,10 +175,6 @@ div .read-more {
 
 .panel-body > p:nth-child(3) {
 	font: 16px pp-sans-big-medium;
-}
-
-.wrapper > p {
-	font: bolder 17px;
 }
 
 .form-group > button {
@@ -273,7 +268,7 @@ div .read-more {
 #mode > li > i {
 	display: inline-block;
 	width: 10%;
-	padding: .75rem 0;
+	padding: 7.5px 0;
 	margin: 0;
 	text-decoration: none;
 	color: #030303;
@@ -430,10 +425,6 @@ div .read-more {
 		font-size: 18px;
 	}
 
-	.wrapper > p {
-		font-size: 20px;
-	}
-
 	.speaker-info {
 		font-size: 10px;
 	}
@@ -473,12 +464,6 @@ div .read-more {
 
 	body > div:nth-child(2) {
 		top: -275px;
-	}
-
-	.navbar-brand > img {
-		height: 200%;
-		position: relative; 
-		top: -10px;
 	}
 
 	.container {

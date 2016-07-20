@@ -81,13 +81,9 @@ $(function() {
     });
 
     $("[data-toggle='tooltip']").tooltip();
-
-    $(document).on("ready", function() {
-	    var img = new Image;
-	    img.src = "res/img/table-background.png";
-	    $(".wrapper").height($(".wrapper").height() * img.width/img.height);
-	});
 });
+
+
 
 // global variables for map manipulation
 var autocompleteOrigin, autocompleteVia, map, directionsDisplay;
@@ -126,7 +122,6 @@ function initMap() {
 		title: "Suntec Convention & Exhibition Center",
 		visible: true
 	});
-	// console.log(marker);
 	var infoWindow = new google.maps.InfoWindow();
 	infoWindow.setContent("<div id='content'><p><strong>Suntec Convention & Exhibition Center</strong></p><p>1 Raffles Boulevard, <span class='street-address'>Suntec City</span>, <span class='country-name'>Singapore</span> <span class='postal-code'>039593</span></p></div>");
 	marker.addListener("click", function() {

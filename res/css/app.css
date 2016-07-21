@@ -103,7 +103,7 @@ div .read-more {
 }
 
 .wrapper {
-	padding: 10%;
+	padding: 5%;
 }
 
 .text-muted {
@@ -491,6 +491,10 @@ a[class="page-scroll"] {
 
 	#page-title {
 		top: -175px;
+	}
+
+	.wrapper {
+		padding: 10%;
 	}
 
 	.about-heading .panel-body {

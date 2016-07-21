@@ -43,12 +43,12 @@ table {
 	table-layout: fixed;
 }
 
-body > p {
+#event-motto {
 	text-align: center;
 	font: 29px pp-sans-big-regular;
 }
 
-body > div:nth-child(2) {
+#page-title {
 	font: 30px pp-sans-big-light;
 	text-shadow: 1px 1px #000000;
 	text-align: center;
@@ -64,14 +64,14 @@ tr > td {
 }
 
 hr.blue-top {
-	height: 2.5px;
+	height: 3px;
   	width: 100%;
   	margin: 0;
   	background: #40c4ff;
   	border: none;
 }
 
-footer > div > p > span {
+.paypal-link {
 	margin: 0;
 	margin-top: 5px;
 }
@@ -106,17 +106,8 @@ div .read-more {
 	padding: 10%;
 }
 
-.name {
-	font: bolder 12px;
-	padding: 5px;
-}
-
 .text-muted {
 	font-size: 11px;
-}
-
-.horizontal > div > div > div > p {
-	padding: 2%;
 }
 
 .panel-heading > h3 {
@@ -132,7 +123,7 @@ div .read-more {
 }
 
 .underline {
-	height: 2.5px;
+	height: 3px;
 	width: 10%;
 	margin: 0;
 	background: #40c4ff;
@@ -152,11 +143,6 @@ div .read-more {
 	border-bottom: thin solid #ececec;
 }
 
-.box > .row > .col-md-2 {
-	text-align: center;
-	color: #8c8c8c;
-}
-
 .venue-info {
 	padding: 2%;
 	margin: 0;
@@ -167,13 +153,13 @@ div .read-more {
 	padding: 3%;
 }
 
-.panel-body > p:nth-child(1) {
+#about-info {
 	color: #6a6a6a;
 	font: 15px pp-sans-big-light;
 	margin-bottom: 5px;
 }
 
-.panel-body > p:nth-child(3) {
+#about-motto {
 	font: 16px pp-sans-big-medium;
 }
 
@@ -202,12 +188,12 @@ div .read-more {
 	max-width: 80%;
 }
 
-.headshot > p {
+.name {
 	font: 15px pp-sans-big-bold;
 }
 
 
-.headshot > p > span {
+.name > span {
 	font: 12px pp-sans-big-light;
 }
 
@@ -250,7 +236,7 @@ div .read-more {
 	width: 100%;
 }
 
-#navbar-ppil > ul > li > a {
+a[class="page-scroll"] {
 	font: pp-sans-big-bold;
 	text-transform: uppercase;
 	color: #444444;
@@ -268,7 +254,7 @@ div .read-more {
 #mode > li > i {
 	display: inline-block;
 	width: 10%;
-	padding: 7.5px 0;
+	padding: 7px 0;
 	margin: 0;
 	text-decoration: none;
 	color: #030303;
@@ -315,8 +301,8 @@ div .read-more {
 	font: 17px;
 }
 
-#schedule-heading ul > li {
-	font: 2rem pp-sans-big-bold;
+.nav-tabs > li {
+	font: 20px pp-sans-big-bold;
 }
 
 
@@ -374,7 +360,7 @@ div .read-more {
 		background-size: 250%;
 	}
 
-	body > div:nth-child(2) {
+	#page-title {
 		top: -300px;
 	}
 
@@ -407,10 +393,6 @@ div .read-more {
 		font-size: 13px;
 	}
 
-	.horizontal > div > div > div > p {
-		padding: 2%;
-	}
-
 	.panel-heading > h3 {
 		font-size: 40px;
 	}
@@ -423,11 +405,11 @@ div .read-more {
 		font-size: 16px;
 	}
 
-	.panel-body > p:nth-child(1) {
+	#about-info {
 		font-size: 15px;
 	}
 
-	.panel-body > p:nth-child(2) {
+	#about-motto {
 		font-size: 18px;
 	}
 
@@ -468,7 +450,7 @@ div .read-more {
 		background-size: 175%;
 	}
 
-	body > div:nth-child(2) {
+	#page-title {
 		top: -275px;
 	}
 
@@ -507,7 +489,7 @@ div .read-more {
 		background-size: 100%;
 	}
 
-	body > div:nth-child(2) {
+	#page-title {
 		top: -175px;
 	}
 
@@ -522,7 +504,7 @@ div .read-more {
 		padding-top: 350px;
 	}
 
-		body > div:nth-child(2) {
+		#page-title {
 		top: -275px;
 	}
 

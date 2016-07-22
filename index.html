@@ -17,8 +17,6 @@
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-		<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-
 		<link rel="stylesheet" href="res/css/app.css">
 
 
@@ -35,14 +33,15 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="https://www.paypal.com"><img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg" alt="PayPal" class="logo"></a>
+					<img class="navbar-brand" src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg" alt="PayPal" class="logo">
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="navbar-ppil">
 					<ul class="nav navbar-nav navbar-right">
+						<li><a class="page-scroll" href="#about-heading">About</a></li>
 						<li><a class="page-scroll" href="#schedule-heading">Schedule</a></li>
-						<li><a class="page-scroll" href="#speaker-heading">Speakers</a></li>
+						<li><a class="page-scroll" href="#speaker-heading">Guests</a></li>
 						<!-- <li><a href="#">FAQ</a></li> -->
 						<li><a class="page-scroll" href="#venue-heading">Venue</a></li>
  						<!-- <li><a href="#">Subscribe</a></li> -->
@@ -51,7 +50,7 @@
 			</div><!-- /.container -->
 		</nav>
 
-		<div>
+		<div id="page-title">
 			<p id="event-name">
 				PayPal Innovation Lab Grand Launch
 			</p>
@@ -74,43 +73,17 @@
 					<h3>
 						About the Event
 					</h3>
-
-					<!-- <div class="row">
-
-						<div class="col-md-7">
-							
-						</div>
-
-						<div class="col-md-1">
-							Hours
-						</div>
-
-						<div class="col-md-1">
-							Minutes
-						</div>
-
-						<div class="col-md-1">
-							Seconds
-						</div>
-
-						<div class="col-md-2" style="text-align: center">
-
-							<button type="button" class="btn btn-primary">
-								<span><i class="fa fa-plus-circle"></i> Register</span>
-							</button>
-						</div>
-					</div> -->
 				</div> <!-- .panel-heading -->
 
 				<div class="panel-body">
-					<p>
+					<p id="about-info">
 						PayPal is ushering in the Future of Money with the launch of its brand new PayPal Innovation Lab in Singapore. As a leader in digital payments, PayPal is bringing together its expertise and resources by fostering innovation and building capability that helps take Singapore to the next frontier in digital commerce and payments.
 						<span class="read-more-text" id="about-info">This is a first-of-its-kind collaboration between PayPal and the Singapore FinTech ecosystem including government agencies, industry associations, consumers and universities. Through the PayPal Innovation Lab, PayPal endeavors to transform the community it is part of – by enabling researchers, students, start-ups and small businesses to embrace FinTech innovation in topics close to their hearts, and contribute to shaping the Future of Money. This year to kick-start this initiative, PayPal is calling for SMEs in the F&amp;B industry to step forward to share their challenges relating to payments.</span>
 					</p>
 
 					<div class="container-fluid read-more btn btn-primary" id="about">Read More <i class="fa fa-angle-double-right"></i></div>
 
-					<p>
+					<p id="about-motto">
 						Come join us for an exciting day and a sneak peek into the Future of Money!
 					</p>
 				</div> <!-- .panel-body -->
@@ -158,6 +131,28 @@
 
 										<td class="row">
 											<div class="col-md-2">
+											</div>
+											<div class="col-md-10">
+												PayPal Innovation Lab Launch Ceremony
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="row">
+											<div class="col-md-2">
+												10:00
+											</div>
+											<div class="col-md-4">
+												Opening Address
+											</div>
+											<div class="col-md-6 text-muted">
+												US Ambassador
+											</div>
+										</td>
+
+										<td class="row">
+											<div class="col-md-2">
 												10:30
 											</div>
 											<div class="col-md-10">
@@ -169,7 +164,6 @@
 									<tr>
 										<td class="row">
 											<div class="col-md-2">
-												10:00
 											</div>
 											<div class="col-md-4">
 												Welcome Address
@@ -183,10 +177,10 @@
 
 										<td class="row">
 											<div class="col-md-2">
-												11:30
+												11:00
 											</div>
 											<div class="col-md-10">
-												Innovation Showcase
+												Tour of Innovation Showcase
 											</div>
 										</td>
 									</tr>
@@ -194,7 +188,6 @@
 									<tr>
 										<td class="row">
 											<div class="col-md-2">
-												10:05
 											</div>
 											<div class="col-md-4">
 												Keynote Address
@@ -216,26 +209,6 @@
 										</td>
 									</tr>
 
-									<tr>
-										<td class="row">
-											<div class="col-md-2">
-												10:25
-											</div>
-											<div class="col-md-10">
-												PayPal Innovation lab Launch Ceremony
-											</div>
-										</td>
-
-										<td class="row">
-											<div class="col-md-2">
-												14:00
-											</div>
-											<div class="col-md-10">
-												PayPal FinTech XChange
-											</div>
-										</td>
-									</tr>
-
 								</tbody>
 							</table>
 						</div>
@@ -243,55 +216,15 @@
 						<div class="tab-pane fade" id="pm">
 							
 							<div class="wrapper">
-								<p>
-									Afternoon session directed to FinTech XChange!
-								</p>
-								<a href="#" class="btn btn-primary" role="button" id="fintech-redirect">Visit FinTech XChange Landing Page</a>
+								<a href="http://10.238.89.12/FinTech-XChange-2016/" class="btn btn-primary" role="button" id="fintech-redirect" data-toggle="tooltip" data-placement="bottom" title="Afternoon session directed to FinTech XChange!">
+									Visit FinTech XChange Landing Page
+								</a>
 							</div>
 						</div> <!-- .tab-pane -->
 					</div> <!-- .tab-content -->
-
-					
 				</div> <!-- .panel-body -->
 			</div> <!-- .panel-default -->
 		</div> <!-- .container -->
-
-<!-- 		<div class="container">
-
-			<div class="panel panel-default">
-
-				<ul class="nav nav-tabs nav-justified">
-
-					<li class="active" data-toggle="tab"><a href="#tab-1">Tab 1</a></li>
-					<li><a href="#tab-2" data-toggle="tab">Tab 2</a></li>
-					<li><a href="#tab-3" data-toggle="tab">Tab 3</a></li>
-					<li><a href="#tab-4" data-toggle="tab">Tab 4</a></li>
-				</ul>
-				
-				<div class="panel-body">
-
-					<div class="tab-content" id="schedule-tab-content">
-
-						<div class="tab-pane fade in active" id="tab-1">
-							Tab 1 Content
-						</div>
-
-						<div class="tab-pane fade" id="tab-2">
-							Tab 2 Content
-						</div>
-
-						<div class="tab-pane fade" id="tab-3">
-							Tab 3 Content
-						</div>
-
-						<div class="tab-pane fade" id="tab-4">
-							Tab 4 Content
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
- -->
 
 		<div class="container" id="speaker-heading">
 
@@ -301,225 +234,48 @@
 
 				<div class="panel-heading">
 					<h3>
-						Speakers
+						Invited Guests
 					</h3>
 				</div>
 
 				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-6 col-sm-4 col-md-3 headshot">
+							<img src="res/img/profile_iswaran.png">
+				   			<p class="name">S Iswaran
+				   				<br>
+								<span>Ministry for Trade &amp; Industry</span>
+							</p>
+						</div>
 
-					<div class="horizontal">
 
-					    <div class="row">
-				        	<div class="thumbnail col-md-6">
-					   			<img id="iswaran-img" class="read-more" src="res/img/profile_iswaran.png" alt="">
-					   			<p class="speaker-info" id="iswaran-img-info">S Iswaran is the Minister for Trade and Industry (Industry), addressing economic restructuring, productivity growth, and creating a vibrant domestic economy and enterprise ecosystem. He sits on the GIC Investment Strategies Committee.</p>
-					   			<p class="name">S Iswaran
-					   				<br>
-									<span>Minister for Trade and Industry</span>
-								</p>
-					   		</div> <!-- .thumbnail -->
+						<div class="col-xs-6 col-sm-4 col-md-3 headshot">
+							<img src="res/img/profile_iswaran.png">
+				   			<p class="name">S Iswaran
+				   				<br>
+								<span>Ministry for Trade &amp; Industry</span>
+							</p>
+						</div>
 
-				        	<div class="thumbnail col-md-6">
-					   			<img id="rohan-img" class="read-more" src="res/img/profile_rohan.png" alt="">
-					   			<p class="speaker-info" id="rohan-img-info">As PayPal's Senior Vice President of Asia Pacific, Rohan Mahadevan provides strategic direction for one of the company's fastest-growing regions covering many of the largest commerce markets in the world, including Australia, Greater China, Japan, India and Southeast Asia.</p>
-					   			<p class="name">Rohan Mahadevan
-					   				<br>
-									<span>Senior Vice President, APAC, PayPal</span>
-								</p>
-					   		</div> <!-- .thumbnail -->
+						<div class="col-xs-6 col-sm-4 col-md-3 headshot">
+							<img src="res/img/profile_iswaran.png">
+				   			<p class="name">S Iswaran
+				   				<br>
+								<span>Ministry for Trade &amp; Industry</span>
+							</p>
+						</div>
 
-					     <!--    <div class="col-md-3">
-					        	<div class="thumbnail">
-						   			<a href="#speaker-3" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
-						   			<p class="name">Speaker 3
-						   				<br>
-										<span class="text-muted">Speaker 3 Detail</span>
-									</p>
-						   		</div>
-					        </div class="col-md-3">
-
-					        <div class="col-md-3">
-					        	<div class="thumbnail">
-						   			<a href="#speaker-4" data-toggle="tab"><img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt=""></a>
-						   			<p class="name">Speaker 4
-						   				<br>
-										<span class="text-muted">Speaker 4 Detail</span>
-									</p>
-						   		</div>
-					        </div class="col-md-3"> -->
-
-					    </div> <!-- .row -->
-					</div> <!-- .horizontal -->
-				</div> <!-- .container-fluid -->
-<!-- 
-					<div class="tab-pane fade" id="speaker-3">
-						<div class="jumbotron">
-							<p>Some Info</p>
+						<div class="col-xs-6 col-sm-4 col-md-3 headshot">
+							<img src="res/img/profile_iswaran.png">
+				   			<p class="name">S Iswaran
+				   				<br>
+								<span>Ministry for Trade &amp; Industry</span>
+							</p>
 						</div>
 					</div>
-
-					<div class="tab-pane fade" id="speaker-4">
-						<div class="jumbotron">
-							<p>Some Info</p>
-						</div>
-					</div>
- -->
-				</div> <!-- .tab-content -->
+				</div>
 			</div> <!-- .panel -->
-		</div> <!-- .container -->
-
-
-		<!-- <div class="container">
-
-			<div class="panel panel-default">
-
-				<div class="panel-heading">
-					<h3 class="panel-title-cust">FAQ</h3>
-					Frequently asked question
-				</div>
-
-				<div class="row">
-
-					<div class="col-md-6">
-						<div class="panel-group" id="accordion-left">
-
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title-cust">
-										<a href="#question-1" data-toggle="collapse" data-parent="#accordion-left">Quesion 1</a>
-									</h4>
-								</div>
-
-								<div class="panel-collapse collapse in" id="question-1">
-									<div class="panel-body">
-										<p>
-											Answer 1
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title-cust">
-										<a href="#question-2" data-toggle="collapse" data-parent="#accordion-left">Question 2</a>
-									</h4>
-								</div>
-
-								<div class="panel-collapse collapse" id="question-2">
-									<div class="panel-body">
-										<p>
-											Answer 2
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title-cust">
-										<a href="#question-3" data-toggle="collapse" data-parent="#accordion-left">Question 3</a>
-									</h4>
-								</div>
-
-								<div class="panel-collapse collapse" id="question-3">
-									<div class="panel-body">
-										<p>
-											Answer 3
-										</p>
-									</div>
-								</div>
-							</div>
-							
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title-cust">
-										<a href="#question-4" data-toggle="collapse" data-parent="#accordion-left">Question 4</a>
-									</h4>
-								</div>
-
-								<div class="panel-collapse collapse" id="question-4">
-									<div class="panel-body">
-										<p>
-											Answer 4
-										</p>
-									</div>
-								</div>
-							</div>						
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="panel-group" id="accordion-right">
-
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title-cust">
-										<a href="#question-5" data-toggle="collapse" data-parent="#accordion-right">Quesion 5</a>
-									</h4>
-								</div>
-
-								<div class="panel-collapse collapse" id="question-5">
-									<div class="panel-body">
-										<p>
-											Answer 5
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title-cust">
-										<a href="#question-6" data-toggle="collapse" data-parent="#accordion-right">Question 6</a>
-									</h4>
-								</div>
-
-								<div class="panel-collapse collapse" id="question-6">
-									<div class="panel-body">
-										<p>
-											Answer 6
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title-cust">
-										<a href="#question-7" data-toggle="collapse" data-parent="#accordion-right">Question 7</a>
-									</h4>
-								</div>
-
-								<div class="panel-collapse collapse" id="question-7">
-									<div class="panel-body">
-										<p>
-											Answer 7
-										</p>
-									</div>
-								</div>
-							</div>
-							
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title-cust">
-										<a href="#question-8" data-toggle="collapse" data-parent="#accordion-right">Question 8</a>
-									</h4>
-								</div>
-
-								<div class="panel-collapse collapse" id="question-8">
-									<div class="panel-body">
-										<p>
-											Answer 8
-										</p>
-									</div>
-								</div>
-							</div>						
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
+		</div>
 
 		<div class="container" id="venue-heading">
 
@@ -533,7 +289,6 @@
 					</h3>
 				</div>
 
-					<!-- <iframe height="450" width="100%" frameborder="0" style="border: 0" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAKJyNP-diLPyMwjJkB-vOa0CZBHYaf1cE&amp;q=Suntec+Convention+%26+Exhibition+Centre"></iframe> -->
 				<div id="map"></div>
 
  				<div class="row container-fluid">
@@ -651,39 +406,12 @@
  						</h4>
 
  						<div class="container-fluid">
-
-							<!-- <div class="panel panel-default"> -->
-
-								<!-- <ul class="nav nav-tabs">
-
-									<li class="active" data-toggle="tab"><a href="#tab-1"><i class="fa fa-car"></i></a></li>
-									<li class=""><a href="#tab-2" data-toggle="tab"><i class="fa fa-train"></i></a></li>
-									<li class=""><a href="#tab-3" data-toggle="tab"><i class="fa fa-bicycle"></i></a></li>
-									<li class=""><a href="#tab-4" data-toggle="tab"><i class="fa fa-male"></i></a></li>
-								</ul>
-
-								
-								<div class="container-fluid">
-
-									<div class="tab-content" id="schedule-tab-content">
-
-
-										<div class="tab-pane fade in active" id="tab-1">
-										</div>
-
-										<div class="tab-pane fade" id="tab-2">
-										</div>
-
-										<div class="tab-pane fade" id="tab-3">
-										</div>
-
-										<div class="tab-pane fade" id="tab-4">
-										</div>
-									</div>
-								</div> -->
 									
 							<ul class="" id="mode">
-								<li class=""><i class="fa fa-car"></i></li><li><i class="fa fa-train"></i></li><li><i class="fa fa-bicycle"></i></li><li><i class="fa fa-male"></i></li>
+								<li><i class="fa fa-car"></i></li>
+								<li><i class="fa fa-train"></i></li>
+								<li><i class="fa fa-bicycle"></i></li>
+								<li><i class="fa fa-male"></i></li>
 								<hr class="underline">
 							</ul>
 
@@ -704,7 +432,7 @@
 
 
 
-		<p>Be part of the Future of Money!</p>
+		<p id="event-motto">Be part of the Future of Money!</p>
 
 		<hr class="grey-bottom">
 
@@ -713,19 +441,16 @@
 		<script src="res/js/jquery.easing.min.js"></script>
 		<script src="res/js/app.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKJyNP-diLPyMwjJkB-vOa0CZBHYaf1cE&amp;sensor=false&amp;libraries=places&amp;callback=initMap" async defer></script>
-<!-- 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKJyNP-diLPyMwjJkB-vOa0CZBHYaf1cE&amp;region=SG&amp;callback=initMap" async defer></script>		
- -->
 	</body>
 
 	<footer class="footer">
-
 
 		<div class="container">
 			
 			<p class="text-muted">
 				&copy; 1999<script>new Date().getFullYear()>1999&&document.write("-"+new Date().getFullYear());</script> PayPal. All rights reserved
-				<span><a href="https://www.paypal.com/us/webapps/mpp/ua/privacy-full">Privacy</a></span>
-				<span><a href="https://www.paypal.com/us/webapps/mpp/ua/legalhub-full">Legal</a></span>
+				<span class="paypal-link"><a href="https://www.paypal.com/us/webapps/mpp/ua/privacy-full">Privacy</a></span>
+				<span class="paypal-link"><a href="https://www.paypal.com/us/webapps/mpp/ua/legalhub-full">Legal</a></span>
 				<br>
 				Consumer advisory - PayPal Pte Ltd the holder of PayPal's stored value facility, does not require the approval of the Monetary Authority of Singapore. Users are advised to read the terms and conditions carefully
 			</p>

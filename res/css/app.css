@@ -43,13 +43,13 @@ table {
 	table-layout: fixed;
 }
 
-body > p {
+#event-motto {
 	text-align: center;
 	font: 29px pp-sans-big-regular;
 }
 
-body > div:nth-child(2) {
-	font: lighter pp-sans-big-light;
+#page-title {
+	font: 30px pp-sans-big-light;
 	text-shadow: 1px 1px #000000;
 	text-align: center;
 	color: white;
@@ -64,14 +64,14 @@ tr > td {
 }
 
 hr.blue-top {
-	height: .25rem;
+	height: 3px;
   	width: 100%;
   	margin: 0;
   	background: #40c4ff;
   	border: none;
 }
 
-footer > div > p > span {
+.paypal-link {
 	margin: 0;
 	margin-top: 5px;
 }
@@ -106,17 +106,8 @@ div .read-more {
 	padding: 5%;
 }
 
-.name {
-	font: bolder 12px;
-	padding: 5px;
-}
-
 .text-muted {
 	font-size: 11px;
-}
-
-.horizontal > div > div > div > p {
-	padding: 2%;
 }
 
 .panel-heading > h3 {
@@ -132,7 +123,7 @@ div .read-more {
 }
 
 .underline {
-	height: .25rem;
+	height: 3px;
 	width: 10%;
 	margin: 0;
 	background: #40c4ff;
@@ -143,19 +134,13 @@ div .read-more {
 	pointer-events: none;
 }
 
-.navbar-brand > img {
-	height: 100%; 
-	
+.navbar-brand {
+	padding: 5px;
 }
 
 .box > .row {
 	padding: 5%;
 	border-bottom: thin solid #ececec;
-}
-
-.box > .row > .col-md-2 {
-	text-align: center;
-	color: #8c8c8c;
 }
 
 .venue-info {
@@ -168,18 +153,14 @@ div .read-more {
 	padding: 3%;
 }
 
-.panel-body > p:nth-child(1) {
+#about-info {
 	color: #6a6a6a;
 	font: 15px pp-sans-big-light;
 	margin-bottom: 5px;
 }
 
-.panel-body > p:nth-child(3) {
+#about-motto {
 	font: 16px pp-sans-big-medium;
-}
-
-.wrapper > p {
-	font: bolder 17px;
 }
 
 .form-group > button {
@@ -198,15 +179,21 @@ div .read-more {
 	pointer-events: none;
 }
 
-.thumbnail {
-	margin: auto;
+.headshot {
+	text-align: center;
+	padding: 0;
 }
 
-.thumbnail > p {
+.headshot > img {
+	max-width: 80%;
+}
+
+.name {
 	font: 15px pp-sans-big-bold;
 }
 
-.thumbnail > p > span {
+
+.name > span {
 	font: 12px pp-sans-big-light;
 }
 
@@ -230,6 +217,18 @@ div .read-more {
 	display: none;
 }
 
+.blur-filter {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.container-fluid > .row {
+	padding: 2%;
+}
+
 /* id */
 
 #map {
@@ -237,7 +236,7 @@ div .read-more {
 	width: 100%;
 }
 
-#navbar-ppil > ul > li > a {
+a[class="page-scroll"] {
 	font: pp-sans-big-bold;
 	text-transform: uppercase;
 	color: #444444;
@@ -255,7 +254,7 @@ div .read-more {
 #mode > li > i {
 	display: inline-block;
 	width: 10%;
-	padding: .75rem 0;
+	padding: 7px 0;
 	margin: 0;
 	text-decoration: none;
 	color: #030303;
@@ -268,6 +267,12 @@ div .read-more {
 
 #pm {
 	text-align: center;
+	background: #e6e4e6 url("../img/table-background.png") no-repeat center top /100%;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+
 }
 
 #fintech-redirect {
@@ -294,6 +299,10 @@ div .read-more {
 
 #event-time {
 	font: 17px;
+}
+
+.nav-tabs > li {
+	font: 20px pp-sans-big-bold;
 }
 
 
@@ -351,7 +360,7 @@ div .read-more {
 		background-size: 250%;
 	}
 
-	body > div:nth-child(2) {
+	#page-title {
 		top: -300px;
 	}
 
@@ -384,10 +393,6 @@ div .read-more {
 		font-size: 13px;
 	}
 
-	.horizontal > div > div > div > p {
-		padding: 2%;
-	}
-
 	.panel-heading > h3 {
 		font-size: 40px;
 	}
@@ -400,27 +405,23 @@ div .read-more {
 		font-size: 16px;
 	}
 
-	.panel-body > p:nth-child(1) {
+	#about-info {
 		font-size: 15px;
 	}
 
-	.panel-body > p:nth-child(2) {
+	#about-motto {
 		font-size: 18px;
-	}
-
-	.wrapper > p {
-		font-size: 20px;
 	}
 
 	.speaker-info {
 		font-size: 10px;
 	}
 
-	.thumbnail > p {
+	.headshot > p {
 		font-size: 18px;
 	}
 
-	.thumbnail > p > span {
+	.headshot > p > span {
 		font-size: 15px;
 	}
 
@@ -449,14 +450,8 @@ div .read-more {
 		background-size: 175%;
 	}
 
-	body > div:nth-child(2) {
+	#page-title {
 		top: -275px;
-	}
-
-	.navbar-brand > img {
-		height: 200%;
-		position: relative; 
-		top: -10px;
 	}
 
 	.container {
@@ -480,7 +475,6 @@ div .read-more {
 	#event-time {
 		font-size: 32px;
 	}
-
 }
 
 @media only screen and (min-width: 850px) {
@@ -495,55 +489,18 @@ div .read-more {
 		background-size: 100%;
 	}
 
-	body > div:nth-child(2) {
+	#page-title {
 		top: -175px;
+	}
+
+	.wrapper {
+		padding: 10%;
 	}
 
 	.about-heading .panel-body {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
-
-/*	
-	For mobile first varied font size
-
-	tbody {
-		font-size: 16px;
-	}
-
-	body > p {
-		font-size: 32px;
-	}
-
-	.panel-heading > h3 {
-		font-size: 40px;
-	}
-
-	.panel-title-cust {
-		font-size: 21px;
-	}
-
-	.venue-info {
-		font-size: 16px;
-	}
-
-	.panel-body > p:nth-child(1) {
-		font-size: 18px;
-	}
-
-	.panel-body > p:nth-child(2) {
-		font-size: 24px;
-	}
-
-	.jumbotron {
-		font-size: 14px;
-	}
-
-	.thumbnail > p {
-		font-size: 18px;
-	}
-*/
-
 }
 
 @media only screen and (min-width: 1150px) {
@@ -551,7 +508,7 @@ div .read-more {
 		padding-top: 350px;
 	}
 
-		body > div:nth-child(2) {
+		#page-title {
 		top: -275px;
 	}
 

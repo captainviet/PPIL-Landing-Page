@@ -421,6 +421,10 @@ a[class="page-scroll"] {
 		font-size: 10px;
 	}
 
+	.headshot {
+		min-height: 37vh;
+	}
+
 	.headshot > p {
 		font-size: 18px;
 	}

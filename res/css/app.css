@@ -229,6 +229,10 @@ div .read-more {
 	padding: 2%;
 }
 
+.tooltip {
+	font: 15px pp-sans-big-light;
+}
+
 /* id */
 
 #map {

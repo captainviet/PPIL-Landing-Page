@@ -50,9 +50,9 @@ table {
 
 #page-title {
 	font: 30px pp-sans-big-light;
-	text-shadow: 1px 1px #000000;
+	/*text-shadow: 1px 1px #000000;*/
 	text-align: center;
-	color: white;
+	color: black;
 	position: relative;
 	top: -330px;
 	left: 5%;
@@ -181,7 +181,8 @@ div .read-more {
 
 .headshot {
 	text-align: center;
-	padding: 0;
+	min-height: 45vh;
+	padding: 10px;
 }
 
 .headshot > img {
@@ -192,8 +193,11 @@ div .read-more {
 	font: 15px pp-sans-big-bold;
 }
 
+.designation {
+	font: 13px pp-sans-big-light;
+}
 
-.name > span {
+.organization {
 	font: 12px pp-sans-big-light;
 }
 
@@ -231,6 +235,18 @@ div .read-more {
 
 .tooltip {
 	font: 15px pp-sans-big-light;
+}
+
+.more-to-come {
+	font: 25px pp-sans-big-light;
+	font-style: italic;
+	color: #999;
+	float: right;
+	padding: 10px;
+}
+
+.panel .row:last-of-type {
+	padding-top: 0;
 }
 
 /* id */

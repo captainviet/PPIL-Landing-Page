@@ -405,10 +405,6 @@ a[class="page-scroll"] {
 		font-size: 32px;
 	}
 
-	.name {
-		font-size: 15px;
-	}
-
 	.text-muted {
 		font-size: 13px;
 	}
@@ -439,14 +435,6 @@ a[class="page-scroll"] {
 
 	.headshot {
 		min-height: 37vh;
-	}
-
-	.headshot > p {
-		font-size: 18px;
-	}
-
-	.headshot > p > span {
-		font-size: 15px;
 	}
 
 	#event-name {
